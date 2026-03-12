@@ -38,6 +38,6 @@ func (s *lookupPhoneStep) Execute(ctx context.Context, _ map[string]any, _ map[s
 		"phone_number":    derefStr(result.PhoneNumber),
 		"country_code":    derefStr(result.CountryCode),
 		"national_format": derefStr(result.NationalFormat),
-		"valid":           derefBool(result.Valid),
+		"valid":           result.Valid,
 	}}, nil
 }

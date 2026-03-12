@@ -4,7 +4,7 @@ go 1.26.0
 
 require (
 	github.com/GoCodeAlone/workflow v0.3.32
-	github.com/twilio/twilio-go v1.23.6
+	github.com/twilio/twilio-go v1.30.3
 )
 
 require (
