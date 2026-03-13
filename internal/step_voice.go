@@ -100,7 +100,7 @@ func (s *listCallsStep) Execute(ctx context.Context, _ map[string]any, _ map[str
 	if err != nil {
 		return &sdk.StepResult{Output: map[string]any{"error": err.Error()}}, nil
 	}
-	result := make([]map[string]any, 0, len(calls))
+	result := make([]any, 0, len(calls))
 	for _, c := range calls {
 		result = append(result, map[string]any{
 			"sid":    derefStr(c.Sid),
@@ -168,7 +168,7 @@ func (s *listConferencesStep) Execute(ctx context.Context, _ map[string]any, _ m
 	if err != nil {
 		return &sdk.StepResult{Output: map[string]any{"error": err.Error()}}, nil
 	}
-	result := make([]map[string]any, 0, len(conferences))
+	result := make([]any, 0, len(conferences))
 	for _, c := range conferences {
 		result = append(result, map[string]any{
 			"sid":           derefStr(c.Sid),
@@ -297,7 +297,7 @@ func (s *listRecordingsStep) Execute(ctx context.Context, _ map[string]any, _ ma
 	if err != nil {
 		return &sdk.StepResult{Output: map[string]any{"error": err.Error()}}, nil
 	}
-	result := make([]map[string]any, 0, len(recordings))
+	result := make([]any, 0, len(recordings))
 	for _, r := range recordings {
 		result = append(result, map[string]any{
 			"sid":      derefStr(r.Sid),

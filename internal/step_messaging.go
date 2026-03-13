@@ -151,7 +151,7 @@ func (s *listMessagesStep) Execute(ctx context.Context, _ map[string]any, _ map[
 	if err != nil {
 		return &sdk.StepResult{Output: map[string]any{"error": err.Error()}}, nil
 	}
-	messages := make([]map[string]any, 0, len(msgs))
+	messages := make([]any, 0, len(msgs))
 	for _, m := range msgs {
 		messages = append(messages, map[string]any{
 			"sid":    derefStr(m.Sid),

@@ -48,7 +48,6 @@ func (m *twilioModule) Init() error {
 	accountSid, _ := m.config["accountSid"].(string)
 	authToken, _ := m.config["authToken"].(string)
 	baseURL, _ := m.config["baseURL"].(string)
-
 	// Build an HTTP client that optionally redirects to a mock server.
 	httpClient := &http.Client{
 		CheckRedirect: func(req *http.Request, via []*http.Request) error {
