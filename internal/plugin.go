@@ -7,6 +7,12 @@ import (
 	sdk "github.com/GoCodeAlone/workflow/plugin/external/sdk"
 )
 
+// Version is set at build time via -ldflags
+// "-X github.com/GoCodeAlone/workflow-plugin-twilio/internal.Version=X.Y.Z".
+// Default is a bare semver so plugin loaders that validate semver accept
+// unreleased dev builds; goreleaser overrides with the real release tag.
+var Version = "0.0.0"
+
 // twilioPlugin implements sdk.PluginProvider, sdk.ModuleProvider, and sdk.StepProvider.
 type twilioPlugin struct{}
 
@@ -19,7 +25,7 @@ func NewTwilioPlugin() sdk.PluginProvider {
 func (p *twilioPlugin) Manifest() sdk.PluginManifest {
 	return sdk.PluginManifest{
 		Name:        "workflow-plugin-twilio",
-		Version:     "0.1.0",
+		Version:     Version,
 		Author:      "GoCodeAlone",
 		Description: "Twilio communications platform plugin (~90 step types across all Twilio APIs)",
 	}
