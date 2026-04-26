@@ -48,6 +48,21 @@ func TestModuleInit_MissingCredentials(t *testing.T) {
 	}
 }
 
+func TestModuleInit_OptionalMissingCredentialsDoesNotRegisterClient(t *testing.T) {
+	m, err := newTwilioModule("test-optional-missing", map[string]any{
+		"optional": true,
+	})
+	if err != nil {
+		t.Fatal(err)
+	}
+	if err := m.Init(); err != nil {
+		t.Fatalf("expected optional module with missing credentials to initialize, got %v", err)
+	}
+	if c, ok := GetClient("test-optional-missing"); ok || c != nil {
+		t.Fatalf("expected no client to be registered for optional missing credentials, got ok=%v client=%v", ok, c)
+	}
+}
+
 func TestModuleInit_WithApiKey(t *testing.T) {
 	m, err := newTwilioModule("test-apikey", map[string]any{
 		"accountSid": "ACtest",
