@@ -8,107 +8,4017 @@
     "tier": "community",
     "private": false,
     "minEngineVersion": "0.3.30",
-    "keywords": ["twilio", "sms", "voice", "messaging", "verify", "video", "conversations", "whatsapp"],
+    "keywords": [
+        "twilio",
+        "sms",
+        "voice",
+        "messaging",
+        "verify",
+        "video",
+        "conversations",
+        "whatsapp"
+    ],
     "homepage": "https://github.com/GoCodeAlone/workflow-plugin-twilio",
     "repository": "https://github.com/GoCodeAlone/workflow-plugin-twilio",
-    "capabilities": {
-        "configProvider": false,
-        "moduleTypes": ["twilio.provider"],
-        "stepTypes": [
-            "step.twilio_send_sms",
-            "step.twilio_send_mms",
-            "step.twilio_send_whatsapp",
-            "step.twilio_list_messages",
-            "step.twilio_fetch_message",
-            "step.twilio_delete_message",
-            "step.twilio_fetch_media",
-            "step.twilio_create_messaging_service",
-            "step.twilio_create_call",
-            "step.twilio_fetch_call",
-            "step.twilio_list_calls",
-            "step.twilio_update_call",
-            "step.twilio_create_conference",
-            "step.twilio_list_conferences",
-            "step.twilio_add_participant",
-            "step.twilio_create_queue",
-            "step.twilio_fetch_recording",
-            "step.twilio_list_recordings",
-            "step.twilio_delete_recording",
-            "step.twilio_send_verification",
-            "step.twilio_check_verification",
-            "step.twilio_create_verify_service",
-            "step.twilio_list_verify_services",
-            "step.twilio_lookup_phone",
-            "step.twilio_create_conversation",
-            "step.twilio_send_conversation_message",
-            "step.twilio_add_conversation_participant",
-            "step.twilio_list_conversations",
-            "step.twilio_fetch_conversation",
-            "step.twilio_list_conversation_messages",
-            "step.twilio_create_conversation_user",
-            "step.twilio_create_room",
-            "step.twilio_list_rooms",
-            "step.twilio_fetch_room",
-            "step.twilio_complete_room",
-            "step.twilio_list_room_recordings",
-            "step.twilio_create_composition",
-            "step.twilio_send_notification",
-            "step.twilio_create_binding",
-            "step.twilio_list_bindings",
-            "step.twilio_create_notify_service",
-            "step.twilio_create_workspace",
-            "step.twilio_create_task",
-            "step.twilio_create_worker",
-            "step.twilio_create_task_queue",
-            "step.twilio_create_tr_workflow",
-            "step.twilio_list_tasks",
-            "step.twilio_update_task",
-            "step.twilio_search_available",
-            "step.twilio_buy_number",
-            "step.twilio_list_numbers",
-            "step.twilio_update_number",
-            "step.twilio_release_number",
-            "step.twilio_trigger_flow",
-            "step.twilio_list_flows",
-            "step.twilio_fetch_execution",
-            "step.twilio_create_serverless_service",
-            "step.twilio_create_function",
-            "step.twilio_create_build",
-            "step.twilio_list_serverless_services",
-            "step.twilio_create_transcript",
-            "step.twilio_fetch_transcript",
-            "step.twilio_list_transcripts",
-            "step.twilio_create_flex_flow",
-            "step.twilio_create_web_channel",
-            "step.twilio_list_flex_flows",
-            "step.twilio_create_proxy_service",
-            "step.twilio_create_session",
-            "step.twilio_add_proxy_participant",
-            "step.twilio_create_sync_service",
-            "step.twilio_create_document",
-            "step.twilio_update_document",
-            "step.twilio_create_sync_map",
-            "step.twilio_create_sync_list",
-            "step.twilio_list_sims",
-            "step.twilio_fetch_sim",
-            "step.twilio_update_sim",
-            "step.twilio_create_fleet",
-            "step.twilio_send_command",
-            "step.twilio_fetch_pricing",
-            "step.twilio_list_usage_records",
-            "step.twilio_list_accounts",
-            "step.twilio_create_api_key",
-            "step.twilio_list_api_keys",
-            "step.twilio_create_content_template",
-            "step.twilio_list_content_templates",
-            "step.twilio_fetch_content_template",
-            "step.twilio_create_trust_product",
-            "step.twilio_list_trust_products",
-            "step.twilio_fetch_trust_product",
-            "step.twilio_create_assistant",
-            "step.twilio_list_assistants",
-            "step.twilio_create_knowledge_base"
-        ],
-        "triggerTypes": []
-    }
+    "moduleTypes": [
+        "twilio.provider"
+    ],
+    "stepTypes": [
+        "step.twilio_send_sms",
+        "step.twilio_send_mms",
+        "step.twilio_send_whatsapp",
+        "step.twilio_list_messages",
+        "step.twilio_fetch_message",
+        "step.twilio_delete_message",
+        "step.twilio_fetch_media",
+        "step.twilio_create_messaging_service",
+        "step.twilio_create_call",
+        "step.twilio_fetch_call",
+        "step.twilio_list_calls",
+        "step.twilio_update_call",
+        "step.twilio_create_conference",
+        "step.twilio_list_conferences",
+        "step.twilio_add_participant",
+        "step.twilio_create_queue",
+        "step.twilio_fetch_recording",
+        "step.twilio_list_recordings",
+        "step.twilio_delete_recording",
+        "step.twilio_send_verification",
+        "step.twilio_check_verification",
+        "step.twilio_create_verify_service",
+        "step.twilio_list_verify_services",
+        "step.twilio_lookup_phone",
+        "step.twilio_create_conversation",
+        "step.twilio_send_conversation_message",
+        "step.twilio_add_conversation_participant",
+        "step.twilio_list_conversations",
+        "step.twilio_fetch_conversation",
+        "step.twilio_list_conversation_messages",
+        "step.twilio_create_conversation_user",
+        "step.twilio_create_room",
+        "step.twilio_list_rooms",
+        "step.twilio_fetch_room",
+        "step.twilio_complete_room",
+        "step.twilio_list_room_recordings",
+        "step.twilio_create_composition",
+        "step.twilio_send_notification",
+        "step.twilio_create_binding",
+        "step.twilio_list_bindings",
+        "step.twilio_create_notify_service",
+        "step.twilio_create_workspace",
+        "step.twilio_create_task",
+        "step.twilio_create_worker",
+        "step.twilio_create_task_queue",
+        "step.twilio_create_tr_workflow",
+        "step.twilio_list_tasks",
+        "step.twilio_update_task",
+        "step.twilio_search_available",
+        "step.twilio_buy_number",
+        "step.twilio_list_numbers",
+        "step.twilio_update_number",
+        "step.twilio_release_number",
+        "step.twilio_trigger_flow",
+        "step.twilio_list_flows",
+        "step.twilio_fetch_execution",
+        "step.twilio_create_serverless_service",
+        "step.twilio_create_function",
+        "step.twilio_create_build",
+        "step.twilio_list_serverless_services",
+        "step.twilio_create_transcript",
+        "step.twilio_fetch_transcript",
+        "step.twilio_list_transcripts",
+        "step.twilio_create_flex_flow",
+        "step.twilio_create_web_channel",
+        "step.twilio_list_flex_flows",
+        "step.twilio_create_proxy_service",
+        "step.twilio_create_session",
+        "step.twilio_add_proxy_participant",
+        "step.twilio_create_sync_service",
+        "step.twilio_create_document",
+        "step.twilio_update_document",
+        "step.twilio_create_sync_map",
+        "step.twilio_create_sync_list",
+        "step.twilio_list_sims",
+        "step.twilio_fetch_sim",
+        "step.twilio_update_sim",
+        "step.twilio_create_fleet",
+        "step.twilio_send_command",
+        "step.twilio_fetch_pricing",
+        "step.twilio_list_usage_records",
+        "step.twilio_list_accounts",
+        "step.twilio_create_api_key",
+        "step.twilio_list_api_keys",
+        "step.twilio_create_content_template",
+        "step.twilio_list_content_templates",
+        "step.twilio_fetch_content_template",
+        "step.twilio_create_trust_product",
+        "step.twilio_list_trust_products",
+        "step.twilio_fetch_trust_product",
+        "step.twilio_create_assistant",
+        "step.twilio_list_assistants",
+        "step.twilio_create_knowledge_base"
+    ],
+    "triggerTypes": [],
+    "stepSchemas": [
+        {
+            "type": "step.twilio_add_conversation_participant",
+            "plugin": "workflow-plugin-twilio",
+            "description": "Add a participant to a Twilio Conversation.",
+            "configFields": [
+                {
+                    "key": "module",
+                    "label": "Module",
+                    "type": "string",
+                    "description": "Name of the twilio.provider module instance to use (defaults to \"twilio\")"
+                },
+                {
+                    "key": "conversation_sid",
+                    "label": "Conversation SID",
+                    "type": "string",
+                    "description": "Target conversation SID",
+                    "required": true
+                },
+                {
+                    "key": "identity",
+                    "label": "Identity",
+                    "type": "string",
+                    "description": "Participant identity (for chat participants)"
+                }
+            ],
+            "outputs": [
+                {
+                    "key": "sid",
+                    "type": "string",
+                    "description": "Participant SID"
+                },
+                {
+                    "key": "identity",
+                    "type": "string",
+                    "description": "Participant identity"
+                },
+                {
+                    "key": "error",
+                    "type": "string",
+                    "description": "Error message if the step failed"
+                }
+            ]
+        },
+        {
+            "type": "step.twilio_add_participant",
+            "plugin": "workflow-plugin-twilio",
+            "description": "Add a PSTN participant to a conference.",
+            "configFields": [
+                {
+                    "key": "module",
+                    "label": "Module",
+                    "type": "string",
+                    "description": "Name of the twilio.provider module instance to use (defaults to \"twilio\")"
+                },
+                {
+                    "key": "conference_sid",
+                    "label": "Conference SID",
+                    "type": "string",
+                    "description": "Conference SID to add participant to",
+                    "required": true
+                },
+                {
+                    "key": "from",
+                    "label": "From",
+                    "type": "string",
+                    "description": "Caller ID to use for the new leg"
+                },
+                {
+                    "key": "to",
+                    "label": "To",
+                    "type": "string",
+                    "description": "Phone number of participant to dial"
+                },
+                {
+                    "key": "url",
+                    "label": "Status Callback URL",
+                    "type": "string",
+                    "description": "URL for participant status callbacks"
+                }
+            ],
+            "outputs": [
+                {
+                    "key": "call_sid",
+                    "type": "string",
+                    "description": "Call SID of the new participant leg"
+                },
+                {
+                    "key": "conference_sid",
+                    "type": "string",
+                    "description": "Conference SID"
+                },
+                {
+                    "key": "error",
+                    "type": "string",
+                    "description": "Error message if the step failed"
+                }
+            ]
+        },
+        {
+            "type": "step.twilio_add_proxy_participant",
+            "plugin": "workflow-plugin-twilio",
+            "description": "Add a participant to a Proxy Session.",
+            "configFields": [
+                {
+                    "key": "module",
+                    "label": "Module",
+                    "type": "string",
+                    "description": "Name of the twilio.provider module instance to use (defaults to \"twilio\")"
+                },
+                {
+                    "key": "service_sid",
+                    "label": "Service SID",
+                    "type": "string",
+                    "description": "Proxy service SID",
+                    "required": true
+                },
+                {
+                    "key": "session_sid",
+                    "label": "Session SID",
+                    "type": "string",
+                    "description": "Session SID to add participant to",
+                    "required": true
+                },
+                {
+                    "key": "identifier",
+                    "label": "Identifier",
+                    "type": "string",
+                    "description": "Phone number or identifier for the participant",
+                    "required": true
+                },
+                {
+                    "key": "friendly_name",
+                    "label": "Friendly Name",
+                    "type": "string",
+                    "description": "Participant display name"
+                }
+            ],
+            "outputs": [
+                {
+                    "key": "sid",
+                    "type": "string",
+                    "description": "Participant SID"
+                },
+                {
+                    "key": "identifier",
+                    "type": "string",
+                    "description": "Participant identifier"
+                },
+                {
+                    "key": "error",
+                    "type": "string",
+                    "description": "Error message if the step failed"
+                }
+            ]
+        },
+        {
+            "type": "step.twilio_buy_number",
+            "plugin": "workflow-plugin-twilio",
+            "description": "Purchase a phone number.",
+            "configFields": [
+                {
+                    "key": "module",
+                    "label": "Module",
+                    "type": "string",
+                    "description": "Name of the twilio.provider module instance to use (defaults to \"twilio\")"
+                },
+                {
+                    "key": "phone_number",
+                    "label": "Phone Number",
+                    "type": "string",
+                    "description": "E.164 phone number to purchase",
+                    "required": true
+                },
+                {
+                    "key": "friendly_name",
+                    "label": "Friendly Name",
+                    "type": "string",
+                    "description": "Label for the purchased number"
+                }
+            ],
+            "outputs": [
+                {
+                    "key": "sid",
+                    "type": "string",
+                    "description": "Incoming phone number SID"
+                },
+                {
+                    "key": "phone_number",
+                    "type": "string",
+                    "description": "Purchased E.164 phone number"
+                },
+                {
+                    "key": "friendly_name",
+                    "type": "string",
+                    "description": "Number label"
+                },
+                {
+                    "key": "error",
+                    "type": "string",
+                    "description": "Error message if the step failed"
+                }
+            ]
+        },
+        {
+            "type": "step.twilio_check_verification",
+            "plugin": "workflow-plugin-twilio",
+            "description": "Check a verification code submitted by the user.",
+            "configFields": [
+                {
+                    "key": "module",
+                    "label": "Module",
+                    "type": "string",
+                    "description": "Name of the twilio.provider module instance to use (defaults to \"twilio\")"
+                },
+                {
+                    "key": "service_sid",
+                    "label": "Service SID",
+                    "type": "string",
+                    "description": "Verify service SID",
+                    "required": true
+                },
+                {
+                    "key": "to",
+                    "label": "To",
+                    "type": "string",
+                    "description": "Phone number being verified",
+                    "required": true
+                },
+                {
+                    "key": "code",
+                    "label": "Code",
+                    "type": "string",
+                    "description": "Verification code entered by the user",
+                    "required": true
+                }
+            ],
+            "outputs": [
+                {
+                    "key": "status",
+                    "type": "string",
+                    "description": "approved or pending"
+                },
+                {
+                    "key": "valid",
+                    "type": "boolean",
+                    "description": "true if the code was correct"
+                },
+                {
+                    "key": "to",
+                    "type": "string",
+                    "description": "Phone number that was verified"
+                },
+                {
+                    "key": "error",
+                    "type": "string",
+                    "description": "Error message if the step failed"
+                }
+            ]
+        },
+        {
+            "type": "step.twilio_complete_room",
+            "plugin": "workflow-plugin-twilio",
+            "description": "End a Video Room by setting its status to completed.",
+            "configFields": [
+                {
+                    "key": "module",
+                    "label": "Module",
+                    "type": "string",
+                    "description": "Name of the twilio.provider module instance to use (defaults to \"twilio\")"
+                },
+                {
+                    "key": "room_sid",
+                    "label": "Room SID",
+                    "type": "string",
+                    "description": "Room SID to complete",
+                    "required": true
+                }
+            ],
+            "outputs": [
+                {
+                    "key": "sid",
+                    "type": "string",
+                    "description": "Room SID"
+                },
+                {
+                    "key": "status",
+                    "type": "string",
+                    "description": "Updated room status"
+                },
+                {
+                    "key": "error",
+                    "type": "string",
+                    "description": "Error message if the step failed"
+                }
+            ]
+        },
+        {
+            "type": "step.twilio_create_api_key",
+            "plugin": "workflow-plugin-twilio",
+            "description": "Create a new Twilio API Key.",
+            "configFields": [
+                {
+                    "key": "module",
+                    "label": "Module",
+                    "type": "string",
+                    "description": "Name of the twilio.provider module instance to use (defaults to \"twilio\")"
+                },
+                {
+                    "key": "friendly_name",
+                    "label": "Friendly Name",
+                    "type": "string",
+                    "description": "Label for the API key"
+                }
+            ],
+            "outputs": [
+                {
+                    "key": "sid",
+                    "type": "string",
+                    "description": "API key SID"
+                },
+                {
+                    "key": "friendly_name",
+                    "type": "string",
+                    "description": "Key label"
+                },
+                {
+                    "key": "secret",
+                    "type": "string",
+                    "description": "API key secret (returned only at creation time)"
+                },
+                {
+                    "key": "error",
+                    "type": "string",
+                    "description": "Error message if the step failed"
+                }
+            ]
+        },
+        {
+            "type": "step.twilio_create_assistant",
+            "plugin": "workflow-plugin-twilio",
+            "description": "Create a Twilio AI Assistant.",
+            "configFields": [
+                {
+                    "key": "module",
+                    "label": "Module",
+                    "type": "string",
+                    "description": "Name of the twilio.provider module instance to use (defaults to \"twilio\")"
+                },
+                {
+                    "key": "name",
+                    "label": "Name",
+                    "type": "string",
+                    "description": "Assistant name",
+                    "required": true
+                }
+            ],
+            "outputs": [
+                {
+                    "key": "id",
+                    "type": "string",
+                    "description": "Assistant ID"
+                },
+                {
+                    "key": "name",
+                    "type": "string",
+                    "description": "Assistant name"
+                },
+                {
+                    "key": "error",
+                    "type": "string",
+                    "description": "Error message if the step failed"
+                }
+            ]
+        },
+        {
+            "type": "step.twilio_create_binding",
+            "plugin": "workflow-plugin-twilio",
+            "description": "Register a device binding for push notifications.",
+            "configFields": [
+                {
+                    "key": "module",
+                    "label": "Module",
+                    "type": "string",
+                    "description": "Name of the twilio.provider module instance to use (defaults to \"twilio\")"
+                },
+                {
+                    "key": "service_sid",
+                    "label": "Service SID",
+                    "type": "string",
+                    "description": "Notify service SID",
+                    "required": true
+                },
+                {
+                    "key": "identity",
+                    "label": "Identity",
+                    "type": "string",
+                    "description": "User identity",
+                    "required": true
+                },
+                {
+                    "key": "binding_type",
+                    "label": "Binding Type",
+                    "type": "string",
+                    "description": "Binding type: apn, fcm, gcm, sms, facebook-messenger",
+                    "required": true
+                },
+                {
+                    "key": "address",
+                    "label": "Address",
+                    "type": "string",
+                    "description": "Device token or address",
+                    "required": true
+                }
+            ],
+            "outputs": [
+                {
+                    "key": "sid",
+                    "type": "string",
+                    "description": "Binding SID"
+                },
+                {
+                    "key": "identity",
+                    "type": "string",
+                    "description": "User identity"
+                },
+                {
+                    "key": "error",
+                    "type": "string",
+                    "description": "Error message if the step failed"
+                }
+            ]
+        },
+        {
+            "type": "step.twilio_create_build",
+            "plugin": "workflow-plugin-twilio",
+            "description": "Trigger a Serverless Build to deploy assets and functions.",
+            "configFields": [
+                {
+                    "key": "module",
+                    "label": "Module",
+                    "type": "string",
+                    "description": "Name of the twilio.provider module instance to use (defaults to \"twilio\")"
+                },
+                {
+                    "key": "service_sid",
+                    "label": "Service SID",
+                    "type": "string",
+                    "description": "Parent serverless service SID",
+                    "required": true
+                },
+                {
+                    "key": "dependencies",
+                    "label": "Dependencies",
+                    "type": "string",
+                    "description": "JSON-encoded dependencies list"
+                }
+            ],
+            "outputs": [
+                {
+                    "key": "sid",
+                    "type": "string",
+                    "description": "Build SID"
+                },
+                {
+                    "key": "status",
+                    "type": "string",
+                    "description": "Build status"
+                },
+                {
+                    "key": "error",
+                    "type": "string",
+                    "description": "Error message if the step failed"
+                }
+            ]
+        },
+        {
+            "type": "step.twilio_create_call",
+            "plugin": "workflow-plugin-twilio",
+            "description": "Initiate an outbound phone call.",
+            "configFields": [
+                {
+                    "key": "module",
+                    "label": "Module",
+                    "type": "string",
+                    "description": "Name of the twilio.provider module instance to use (defaults to \"twilio\")"
+                },
+                {
+                    "key": "to",
+                    "label": "To",
+                    "type": "string",
+                    "description": "Destination phone number in E.164 format",
+                    "required": true
+                },
+                {
+                    "key": "from",
+                    "label": "From",
+                    "type": "string",
+                    "description": "Caller ID phone number"
+                },
+                {
+                    "key": "url",
+                    "label": "TwiML URL",
+                    "type": "string",
+                    "description": "URL that returns TwiML instructions for the call"
+                }
+            ],
+            "outputs": [
+                {
+                    "key": "sid",
+                    "type": "string",
+                    "description": "Call SID"
+                },
+                {
+                    "key": "status",
+                    "type": "string",
+                    "description": "Call status"
+                },
+                {
+                    "key": "to",
+                    "type": "string",
+                    "description": "Destination number"
+                },
+                {
+                    "key": "from",
+                    "type": "string",
+                    "description": "Caller ID"
+                },
+                {
+                    "key": "error",
+                    "type": "string",
+                    "description": "Error message if the step failed"
+                }
+            ]
+        },
+        {
+            "type": "step.twilio_create_composition",
+            "plugin": "workflow-plugin-twilio",
+            "description": "Create a Video Room composition from recordings.",
+            "configFields": [
+                {
+                    "key": "module",
+                    "label": "Module",
+                    "type": "string",
+                    "description": "Name of the twilio.provider module instance to use (defaults to \"twilio\")"
+                },
+                {
+                    "key": "room_sid",
+                    "label": "Room SID",
+                    "type": "string",
+                    "description": "Room SID to compose",
+                    "required": true
+                },
+                {
+                    "key": "audio_sources",
+                    "label": "Audio Sources",
+                    "type": "string",
+                    "description": "Comma-separated list of audio source track names"
+                },
+                {
+                    "key": "video_layout",
+                    "label": "Video Layout",
+                    "type": "string",
+                    "description": "JSON video layout definition"
+                }
+            ],
+            "outputs": [
+                {
+                    "key": "sid",
+                    "type": "string",
+                    "description": "Composition SID"
+                },
+                {
+                    "key": "status",
+                    "type": "string",
+                    "description": "Composition status"
+                },
+                {
+                    "key": "error",
+                    "type": "string",
+                    "description": "Error message if the step failed"
+                }
+            ]
+        },
+        {
+            "type": "step.twilio_create_conference",
+            "plugin": "workflow-plugin-twilio",
+            "description": "List conferences (alias for list_conferences; conference creation is implicit via TwiML).",
+            "configFields": [
+                {
+                    "key": "module",
+                    "label": "Module",
+                    "type": "string",
+                    "description": "Name of the twilio.provider module instance to use (defaults to \"twilio\")"
+                }
+            ],
+            "outputs": [
+                {
+                    "key": "conferences",
+                    "type": "array",
+                    "description": "List of conference objects"
+                },
+                {
+                    "key": "count",
+                    "type": "number",
+                    "description": "Number of conferences"
+                },
+                {
+                    "key": "error",
+                    "type": "string",
+                    "description": "Error message if the step failed"
+                }
+            ]
+        },
+        {
+            "type": "step.twilio_create_content_template",
+            "plugin": "workflow-plugin-twilio",
+            "description": "Create a Twilio Content Template.",
+            "configFields": [
+                {
+                    "key": "module",
+                    "label": "Module",
+                    "type": "string",
+                    "description": "Name of the twilio.provider module instance to use (defaults to \"twilio\")"
+                },
+                {
+                    "key": "friendly_name",
+                    "label": "Friendly Name",
+                    "type": "string",
+                    "description": "Template name",
+                    "required": true
+                },
+                {
+                    "key": "language",
+                    "label": "Language",
+                    "type": "string",
+                    "description": "BCP-47 language tag (e.g. en, fr)",
+                    "required": true
+                }
+            ],
+            "outputs": [
+                {
+                    "key": "sid",
+                    "type": "string",
+                    "description": "Content template SID"
+                },
+                {
+                    "key": "friendly_name",
+                    "type": "string",
+                    "description": "Template name"
+                },
+                {
+                    "key": "error",
+                    "type": "string",
+                    "description": "Error message if the step failed"
+                }
+            ]
+        },
+        {
+            "type": "step.twilio_create_conversation",
+            "plugin": "workflow-plugin-twilio",
+            "description": "Create a new Twilio Conversation.",
+            "configFields": [
+                {
+                    "key": "module",
+                    "label": "Module",
+                    "type": "string",
+                    "description": "Name of the twilio.provider module instance to use (defaults to \"twilio\")"
+                },
+                {
+                    "key": "friendly_name",
+                    "label": "Friendly Name",
+                    "type": "string",
+                    "description": "Conversation display name"
+                }
+            ],
+            "outputs": [
+                {
+                    "key": "sid",
+                    "type": "string",
+                    "description": "Conversation SID"
+                },
+                {
+                    "key": "friendly_name",
+                    "type": "string",
+                    "description": "Conversation name"
+                },
+                {
+                    "key": "error",
+                    "type": "string",
+                    "description": "Error message if the step failed"
+                }
+            ]
+        },
+        {
+            "type": "step.twilio_create_conversation_user",
+            "plugin": "workflow-plugin-twilio",
+            "description": "Create a Conversations user.",
+            "configFields": [
+                {
+                    "key": "module",
+                    "label": "Module",
+                    "type": "string",
+                    "description": "Name of the twilio.provider module instance to use (defaults to \"twilio\")"
+                },
+                {
+                    "key": "identity",
+                    "label": "Identity",
+                    "type": "string",
+                    "description": "Unique user identity",
+                    "required": true
+                },
+                {
+                    "key": "friendly_name",
+                    "label": "Friendly Name",
+                    "type": "string",
+                    "description": "Display name"
+                }
+            ],
+            "outputs": [
+                {
+                    "key": "sid",
+                    "type": "string",
+                    "description": "User SID"
+                },
+                {
+                    "key": "identity",
+                    "type": "string",
+                    "description": "User identity"
+                },
+                {
+                    "key": "error",
+                    "type": "string",
+                    "description": "Error message if the step failed"
+                }
+            ]
+        },
+        {
+            "type": "step.twilio_create_document",
+            "plugin": "workflow-plugin-twilio",
+            "description": "Create a Sync Document.",
+            "configFields": [
+                {
+                    "key": "module",
+                    "label": "Module",
+                    "type": "string",
+                    "description": "Name of the twilio.provider module instance to use (defaults to \"twilio\")"
+                },
+                {
+                    "key": "service_sid",
+                    "label": "Service SID",
+                    "type": "string",
+                    "description": "Sync service SID",
+                    "required": true
+                },
+                {
+                    "key": "unique_name",
+                    "label": "Unique Name",
+                    "type": "string",
+                    "description": "Document unique name"
+                }
+            ],
+            "outputs": [
+                {
+                    "key": "sid",
+                    "type": "string",
+                    "description": "Document SID"
+                },
+                {
+                    "key": "unique_name",
+                    "type": "string",
+                    "description": "Document unique name"
+                },
+                {
+                    "key": "error",
+                    "type": "string",
+                    "description": "Error message if the step failed"
+                }
+            ]
+        },
+        {
+            "type": "step.twilio_create_fleet",
+            "plugin": "workflow-plugin-twilio",
+            "description": "Create a Wireless Rate Plan (fleet).",
+            "configFields": [
+                {
+                    "key": "module",
+                    "label": "Module",
+                    "type": "string",
+                    "description": "Name of the twilio.provider module instance to use (defaults to \"twilio\")"
+                }
+            ],
+            "outputs": [
+                {
+                    "key": "sid",
+                    "type": "string",
+                    "description": "Rate plan SID"
+                },
+                {
+                    "key": "unique_name",
+                    "type": "string",
+                    "description": "Rate plan unique name"
+                },
+                {
+                    "key": "error",
+                    "type": "string",
+                    "description": "Error message if the step failed"
+                }
+            ]
+        },
+        {
+            "type": "step.twilio_create_flex_flow",
+            "plugin": "workflow-plugin-twilio",
+            "description": "Create a Twilio Flex Flow.",
+            "configFields": [
+                {
+                    "key": "module",
+                    "label": "Module",
+                    "type": "string",
+                    "description": "Name of the twilio.provider module instance to use (defaults to \"twilio\")"
+                },
+                {
+                    "key": "friendly_name",
+                    "label": "Friendly Name",
+                    "type": "string",
+                    "description": "Flow name",
+                    "required": true
+                },
+                {
+                    "key": "channel_type",
+                    "label": "Channel Type",
+                    "type": "string",
+                    "description": "Channel type: web, sms, facebook, whatsapp, line, custom",
+                    "required": true
+                },
+                {
+                    "key": "chat_service_sid",
+                    "label": "Chat Service SID",
+                    "type": "string",
+                    "description": "Flex chat service SID"
+                }
+            ],
+            "outputs": [
+                {
+                    "key": "sid",
+                    "type": "string",
+                    "description": "Flex flow SID"
+                },
+                {
+                    "key": "friendly_name",
+                    "type": "string",
+                    "description": "Flow name"
+                },
+                {
+                    "key": "error",
+                    "type": "string",
+                    "description": "Error message if the step failed"
+                }
+            ]
+        },
+        {
+            "type": "step.twilio_create_function",
+            "plugin": "workflow-plugin-twilio",
+            "description": "Create a Serverless Function within a Service.",
+            "configFields": [
+                {
+                    "key": "module",
+                    "label": "Module",
+                    "type": "string",
+                    "description": "Name of the twilio.provider module instance to use (defaults to \"twilio\")"
+                },
+                {
+                    "key": "service_sid",
+                    "label": "Service SID",
+                    "type": "string",
+                    "description": "Parent serverless service SID",
+                    "required": true
+                },
+                {
+                    "key": "friendly_name",
+                    "label": "Friendly Name",
+                    "type": "string",
+                    "description": "Function name",
+                    "required": true
+                }
+            ],
+            "outputs": [
+                {
+                    "key": "sid",
+                    "type": "string",
+                    "description": "Function SID"
+                },
+                {
+                    "key": "friendly_name",
+                    "type": "string",
+                    "description": "Function name"
+                },
+                {
+                    "key": "error",
+                    "type": "string",
+                    "description": "Error message if the step failed"
+                }
+            ]
+        },
+        {
+            "type": "step.twilio_create_knowledge_base",
+            "plugin": "workflow-plugin-twilio",
+            "description": "Create a Knowledge Base for a Twilio AI Assistant.",
+            "configFields": [
+                {
+                    "key": "module",
+                    "label": "Module",
+                    "type": "string",
+                    "description": "Name of the twilio.provider module instance to use (defaults to \"twilio\")"
+                }
+            ],
+            "outputs": [
+                {
+                    "key": "id",
+                    "type": "string",
+                    "description": "Knowledge base ID"
+                },
+                {
+                    "key": "error",
+                    "type": "string",
+                    "description": "Error message if the step failed"
+                }
+            ]
+        },
+        {
+            "type": "step.twilio_create_messaging_service",
+            "plugin": "workflow-plugin-twilio",
+            "description": "Create a Twilio Messaging Service.",
+            "configFields": [
+                {
+                    "key": "module",
+                    "label": "Module",
+                    "type": "string",
+                    "description": "Name of the twilio.provider module instance to use (defaults to \"twilio\")"
+                },
+                {
+                    "key": "friendly_name",
+                    "label": "Friendly Name",
+                    "type": "string",
+                    "description": "Human-readable name for the messaging service",
+                    "required": true
+                }
+            ],
+            "outputs": [
+                {
+                    "key": "sid",
+                    "type": "string",
+                    "description": "Messaging service SID"
+                },
+                {
+                    "key": "friendly_name",
+                    "type": "string",
+                    "description": "Service friendly name"
+                },
+                {
+                    "key": "error",
+                    "type": "string",
+                    "description": "Error message if the step failed"
+                }
+            ]
+        },
+        {
+            "type": "step.twilio_create_notify_service",
+            "plugin": "workflow-plugin-twilio",
+            "description": "Create a Twilio Notify Service.",
+            "configFields": [
+                {
+                    "key": "module",
+                    "label": "Module",
+                    "type": "string",
+                    "description": "Name of the twilio.provider module instance to use (defaults to \"twilio\")"
+                },
+                {
+                    "key": "friendly_name",
+                    "label": "Friendly Name",
+                    "type": "string",
+                    "description": "Service name",
+                    "required": true
+                }
+            ],
+            "outputs": [
+                {
+                    "key": "sid",
+                    "type": "string",
+                    "description": "Notify service SID"
+                },
+                {
+                    "key": "friendly_name",
+                    "type": "string",
+                    "description": "Service name"
+                },
+                {
+                    "key": "error",
+                    "type": "string",
+                    "description": "Error message if the step failed"
+                }
+            ]
+        },
+        {
+            "type": "step.twilio_create_proxy_service",
+            "plugin": "workflow-plugin-twilio",
+            "description": "Create a Twilio Proxy Service.",
+            "configFields": [
+                {
+                    "key": "module",
+                    "label": "Module",
+                    "type": "string",
+                    "description": "Name of the twilio.provider module instance to use (defaults to \"twilio\")"
+                },
+                {
+                    "key": "unique_name",
+                    "label": "Unique Name",
+                    "type": "string",
+                    "description": "Unique name for the service",
+                    "required": true
+                }
+            ],
+            "outputs": [
+                {
+                    "key": "sid",
+                    "type": "string",
+                    "description": "Proxy service SID"
+                },
+                {
+                    "key": "unique_name",
+                    "type": "string",
+                    "description": "Service unique name"
+                },
+                {
+                    "key": "error",
+                    "type": "string",
+                    "description": "Error message if the step failed"
+                }
+            ]
+        },
+        {
+            "type": "step.twilio_create_queue",
+            "plugin": "workflow-plugin-twilio",
+            "description": "Create a call queue.",
+            "configFields": [
+                {
+                    "key": "module",
+                    "label": "Module",
+                    "type": "string",
+                    "description": "Name of the twilio.provider module instance to use (defaults to \"twilio\")"
+                },
+                {
+                    "key": "friendly_name",
+                    "label": "Friendly Name",
+                    "type": "string",
+                    "description": "Queue name",
+                    "required": true
+                },
+                {
+                    "key": "max_size",
+                    "label": "Max Size",
+                    "type": "number",
+                    "description": "Maximum number of calls allowed in the queue"
+                }
+            ],
+            "outputs": [
+                {
+                    "key": "sid",
+                    "type": "string",
+                    "description": "Queue SID"
+                },
+                {
+                    "key": "friendly_name",
+                    "type": "string",
+                    "description": "Queue name"
+                },
+                {
+                    "key": "error",
+                    "type": "string",
+                    "description": "Error message if the step failed"
+                }
+            ]
+        },
+        {
+            "type": "step.twilio_create_room",
+            "plugin": "workflow-plugin-twilio",
+            "description": "Create a Twilio Video Room.",
+            "configFields": [
+                {
+                    "key": "module",
+                    "label": "Module",
+                    "type": "string",
+                    "description": "Name of the twilio.provider module instance to use (defaults to \"twilio\")"
+                },
+                {
+                    "key": "unique_name",
+                    "label": "Unique Name",
+                    "type": "string",
+                    "description": "Room unique name"
+                },
+                {
+                    "key": "type",
+                    "label": "Type",
+                    "type": "string",
+                    "description": "Room type: go, peer-to-peer, group, group-small"
+                }
+            ],
+            "outputs": [
+                {
+                    "key": "sid",
+                    "type": "string",
+                    "description": "Room SID"
+                },
+                {
+                    "key": "unique_name",
+                    "type": "string",
+                    "description": "Room unique name"
+                },
+                {
+                    "key": "status",
+                    "type": "string",
+                    "description": "Room status"
+                },
+                {
+                    "key": "error",
+                    "type": "string",
+                    "description": "Error message if the step failed"
+                }
+            ]
+        },
+        {
+            "type": "step.twilio_create_serverless_service",
+            "plugin": "workflow-plugin-twilio",
+            "description": "Create a Twilio Serverless Service.",
+            "configFields": [
+                {
+                    "key": "module",
+                    "label": "Module",
+                    "type": "string",
+                    "description": "Name of the twilio.provider module instance to use (defaults to \"twilio\")"
+                },
+                {
+                    "key": "unique_name",
+                    "label": "Unique Name",
+                    "type": "string",
+                    "description": "Unique identifier for the service",
+                    "required": true
+                },
+                {
+                    "key": "friendly_name",
+                    "label": "Friendly Name",
+                    "type": "string",
+                    "description": "Human-readable service name"
+                }
+            ],
+            "outputs": [
+                {
+                    "key": "sid",
+                    "type": "string",
+                    "description": "Serverless service SID"
+                },
+                {
+                    "key": "unique_name",
+                    "type": "string",
+                    "description": "Service unique name"
+                },
+                {
+                    "key": "error",
+                    "type": "string",
+                    "description": "Error message if the step failed"
+                }
+            ]
+        },
+        {
+            "type": "step.twilio_create_session",
+            "plugin": "workflow-plugin-twilio",
+            "description": "Create a Proxy Session.",
+            "configFields": [
+                {
+                    "key": "module",
+                    "label": "Module",
+                    "type": "string",
+                    "description": "Name of the twilio.provider module instance to use (defaults to \"twilio\")"
+                },
+                {
+                    "key": "service_sid",
+                    "label": "Service SID",
+                    "type": "string",
+                    "description": "Proxy service SID",
+                    "required": true
+                },
+                {
+                    "key": "unique_name",
+                    "label": "Unique Name",
+                    "type": "string",
+                    "description": "Optional session unique name"
+                }
+            ],
+            "outputs": [
+                {
+                    "key": "sid",
+                    "type": "string",
+                    "description": "Session SID"
+                },
+                {
+                    "key": "unique_name",
+                    "type": "string",
+                    "description": "Session unique name"
+                },
+                {
+                    "key": "error",
+                    "type": "string",
+                    "description": "Error message if the step failed"
+                }
+            ]
+        },
+        {
+            "type": "step.twilio_create_sync_list",
+            "plugin": "workflow-plugin-twilio",
+            "description": "Create a Sync List.",
+            "configFields": [
+                {
+                    "key": "module",
+                    "label": "Module",
+                    "type": "string",
+                    "description": "Name of the twilio.provider module instance to use (defaults to \"twilio\")"
+                },
+                {
+                    "key": "service_sid",
+                    "label": "Service SID",
+                    "type": "string",
+                    "description": "Sync service SID",
+                    "required": true
+                },
+                {
+                    "key": "unique_name",
+                    "label": "Unique Name",
+                    "type": "string",
+                    "description": "List unique name"
+                }
+            ],
+            "outputs": [
+                {
+                    "key": "sid",
+                    "type": "string",
+                    "description": "Sync list SID"
+                },
+                {
+                    "key": "unique_name",
+                    "type": "string",
+                    "description": "List unique name"
+                },
+                {
+                    "key": "error",
+                    "type": "string",
+                    "description": "Error message if the step failed"
+                }
+            ]
+        },
+        {
+            "type": "step.twilio_create_sync_map",
+            "plugin": "workflow-plugin-twilio",
+            "description": "Create a Sync Map.",
+            "configFields": [
+                {
+                    "key": "module",
+                    "label": "Module",
+                    "type": "string",
+                    "description": "Name of the twilio.provider module instance to use (defaults to \"twilio\")"
+                },
+                {
+                    "key": "service_sid",
+                    "label": "Service SID",
+                    "type": "string",
+                    "description": "Sync service SID",
+                    "required": true
+                },
+                {
+                    "key": "unique_name",
+                    "label": "Unique Name",
+                    "type": "string",
+                    "description": "Map unique name"
+                }
+            ],
+            "outputs": [
+                {
+                    "key": "sid",
+                    "type": "string",
+                    "description": "Sync map SID"
+                },
+                {
+                    "key": "unique_name",
+                    "type": "string",
+                    "description": "Map unique name"
+                },
+                {
+                    "key": "error",
+                    "type": "string",
+                    "description": "Error message if the step failed"
+                }
+            ]
+        },
+        {
+            "type": "step.twilio_create_sync_service",
+            "plugin": "workflow-plugin-twilio",
+            "description": "Create a Twilio Sync Service.",
+            "configFields": [
+                {
+                    "key": "module",
+                    "label": "Module",
+                    "type": "string",
+                    "description": "Name of the twilio.provider module instance to use (defaults to \"twilio\")"
+                },
+                {
+                    "key": "friendly_name",
+                    "label": "Friendly Name",
+                    "type": "string",
+                    "description": "Service name"
+                }
+            ],
+            "outputs": [
+                {
+                    "key": "sid",
+                    "type": "string",
+                    "description": "Sync service SID"
+                },
+                {
+                    "key": "friendly_name",
+                    "type": "string",
+                    "description": "Service name"
+                },
+                {
+                    "key": "error",
+                    "type": "string",
+                    "description": "Error message if the step failed"
+                }
+            ]
+        },
+        {
+            "type": "step.twilio_create_task",
+            "plugin": "workflow-plugin-twilio",
+            "description": "Create a TaskRouter Task.",
+            "configFields": [
+                {
+                    "key": "module",
+                    "label": "Module",
+                    "type": "string",
+                    "description": "Name of the twilio.provider module instance to use (defaults to \"twilio\")"
+                },
+                {
+                    "key": "workspace_sid",
+                    "label": "Workspace SID",
+                    "type": "string",
+                    "description": "Target workspace SID",
+                    "required": true
+                },
+                {
+                    "key": "task_channel",
+                    "label": "Task Channel",
+                    "type": "string",
+                    "description": "Task channel unique name (e.g. voice, chat)"
+                },
+                {
+                    "key": "attributes",
+                    "label": "Attributes",
+                    "type": "string",
+                    "description": "JSON string of task attributes"
+                }
+            ],
+            "outputs": [
+                {
+                    "key": "sid",
+                    "type": "string",
+                    "description": "Task SID"
+                },
+                {
+                    "key": "status",
+                    "type": "string",
+                    "description": "Task status"
+                },
+                {
+                    "key": "error",
+                    "type": "string",
+                    "description": "Error message if the step failed"
+                }
+            ]
+        },
+        {
+            "type": "step.twilio_create_task_queue",
+            "plugin": "workflow-plugin-twilio",
+            "description": "Create a TaskRouter Task Queue.",
+            "configFields": [
+                {
+                    "key": "module",
+                    "label": "Module",
+                    "type": "string",
+                    "description": "Name of the twilio.provider module instance to use (defaults to \"twilio\")"
+                },
+                {
+                    "key": "workspace_sid",
+                    "label": "Workspace SID",
+                    "type": "string",
+                    "description": "Target workspace SID",
+                    "required": true
+                },
+                {
+                    "key": "friendly_name",
+                    "label": "Friendly Name",
+                    "type": "string",
+                    "description": "Queue name",
+                    "required": true
+                },
+                {
+                    "key": "target_workers",
+                    "label": "Target Workers",
+                    "type": "string",
+                    "description": "Worker expression for routing"
+                }
+            ],
+            "outputs": [
+                {
+                    "key": "sid",
+                    "type": "string",
+                    "description": "Task queue SID"
+                },
+                {
+                    "key": "friendly_name",
+                    "type": "string",
+                    "description": "Queue name"
+                },
+                {
+                    "key": "error",
+                    "type": "string",
+                    "description": "Error message if the step failed"
+                }
+            ]
+        },
+        {
+            "type": "step.twilio_create_tr_workflow",
+            "plugin": "workflow-plugin-twilio",
+            "description": "Create a TaskRouter Workflow.",
+            "configFields": [
+                {
+                    "key": "module",
+                    "label": "Module",
+                    "type": "string",
+                    "description": "Name of the twilio.provider module instance to use (defaults to \"twilio\")"
+                },
+                {
+                    "key": "workspace_sid",
+                    "label": "Workspace SID",
+                    "type": "string",
+                    "description": "Target workspace SID",
+                    "required": true
+                },
+                {
+                    "key": "friendly_name",
+                    "label": "Friendly Name",
+                    "type": "string",
+                    "description": "Workflow name",
+                    "required": true
+                },
+                {
+                    "key": "configuration",
+                    "label": "Configuration",
+                    "type": "string",
+                    "description": "JSON workflow configuration string"
+                }
+            ],
+            "outputs": [
+                {
+                    "key": "sid",
+                    "type": "string",
+                    "description": "Workflow SID"
+                },
+                {
+                    "key": "friendly_name",
+                    "type": "string",
+                    "description": "Workflow name"
+                },
+                {
+                    "key": "error",
+                    "type": "string",
+                    "description": "Error message if the step failed"
+                }
+            ]
+        },
+        {
+            "type": "step.twilio_create_transcript",
+            "plugin": "workflow-plugin-twilio",
+            "description": "Create an Intelligence transcript from a call recording.",
+            "configFields": [
+                {
+                    "key": "module",
+                    "label": "Module",
+                    "type": "string",
+                    "description": "Name of the twilio.provider module instance to use (defaults to \"twilio\")"
+                },
+                {
+                    "key": "service_sid",
+                    "label": "Service SID",
+                    "type": "string",
+                    "description": "Intelligence service SID",
+                    "required": true
+                }
+            ],
+            "outputs": [
+                {
+                    "key": "sid",
+                    "type": "string",
+                    "description": "Transcript SID"
+                },
+                {
+                    "key": "status",
+                    "type": "string",
+                    "description": "Transcript status"
+                },
+                {
+                    "key": "error",
+                    "type": "string",
+                    "description": "Error message if the step failed"
+                }
+            ]
+        },
+        {
+            "type": "step.twilio_create_trust_product",
+            "plugin": "workflow-plugin-twilio",
+            "description": "Create a TrustHub Trust Product.",
+            "configFields": [
+                {
+                    "key": "module",
+                    "label": "Module",
+                    "type": "string",
+                    "description": "Name of the twilio.provider module instance to use (defaults to \"twilio\")"
+                },
+                {
+                    "key": "friendly_name",
+                    "label": "Friendly Name",
+                    "type": "string",
+                    "description": "Trust product name",
+                    "required": true
+                },
+                {
+                    "key": "email",
+                    "label": "Email",
+                    "type": "string",
+                    "description": "Contact email",
+                    "required": true
+                },
+                {
+                    "key": "policy_sid",
+                    "label": "Policy SID",
+                    "type": "string",
+                    "description": "TrustHub policy SID",
+                    "required": true
+                }
+            ],
+            "outputs": [
+                {
+                    "key": "sid",
+                    "type": "string",
+                    "description": "Trust product SID"
+                },
+                {
+                    "key": "friendly_name",
+                    "type": "string",
+                    "description": "Product name"
+                },
+                {
+                    "key": "status",
+                    "type": "string",
+                    "description": "Registration status"
+                },
+                {
+                    "key": "error",
+                    "type": "string",
+                    "description": "Error message if the step failed"
+                }
+            ]
+        },
+        {
+            "type": "step.twilio_create_verify_service",
+            "plugin": "workflow-plugin-twilio",
+            "description": "Create a Twilio Verify Service.",
+            "configFields": [
+                {
+                    "key": "module",
+                    "label": "Module",
+                    "type": "string",
+                    "description": "Name of the twilio.provider module instance to use (defaults to \"twilio\")"
+                },
+                {
+                    "key": "friendly_name",
+                    "label": "Friendly Name",
+                    "type": "string",
+                    "description": "Human-readable name for the service",
+                    "required": true
+                }
+            ],
+            "outputs": [
+                {
+                    "key": "sid",
+                    "type": "string",
+                    "description": "Verify service SID"
+                },
+                {
+                    "key": "friendly_name",
+                    "type": "string",
+                    "description": "Service name"
+                },
+                {
+                    "key": "error",
+                    "type": "string",
+                    "description": "Error message if the step failed"
+                }
+            ]
+        },
+        {
+            "type": "step.twilio_create_web_channel",
+            "plugin": "workflow-plugin-twilio",
+            "description": "Create a Flex Web Channel (chat session).",
+            "configFields": [
+                {
+                    "key": "module",
+                    "label": "Module",
+                    "type": "string",
+                    "description": "Name of the twilio.provider module instance to use (defaults to \"twilio\")"
+                },
+                {
+                    "key": "flex_flow_sid",
+                    "label": "Flex Flow SID",
+                    "type": "string",
+                    "description": "Flex flow to use",
+                    "required": true
+                },
+                {
+                    "key": "identity",
+                    "label": "Identity",
+                    "type": "string",
+                    "description": "Customer identity"
+                },
+                {
+                    "key": "customer_friendly_name",
+                    "label": "Customer Name",
+                    "type": "string",
+                    "description": "Customer display name"
+                }
+            ],
+            "outputs": [
+                {
+                    "key": "sid",
+                    "type": "string",
+                    "description": "Web channel SID"
+                },
+                {
+                    "key": "error",
+                    "type": "string",
+                    "description": "Error message if the step failed"
+                }
+            ]
+        },
+        {
+            "type": "step.twilio_create_worker",
+            "plugin": "workflow-plugin-twilio",
+            "description": "Create a TaskRouter Worker.",
+            "configFields": [
+                {
+                    "key": "module",
+                    "label": "Module",
+                    "type": "string",
+                    "description": "Name of the twilio.provider module instance to use (defaults to \"twilio\")"
+                },
+                {
+                    "key": "workspace_sid",
+                    "label": "Workspace SID",
+                    "type": "string",
+                    "description": "Target workspace SID",
+                    "required": true
+                },
+                {
+                    "key": "friendly_name",
+                    "label": "Friendly Name",
+                    "type": "string",
+                    "description": "Worker name",
+                    "required": true
+                },
+                {
+                    "key": "attributes",
+                    "label": "Attributes",
+                    "type": "string",
+                    "description": "JSON string of worker attributes"
+                }
+            ],
+            "outputs": [
+                {
+                    "key": "sid",
+                    "type": "string",
+                    "description": "Worker SID"
+                },
+                {
+                    "key": "friendly_name",
+                    "type": "string",
+                    "description": "Worker name"
+                },
+                {
+                    "key": "error",
+                    "type": "string",
+                    "description": "Error message if the step failed"
+                }
+            ]
+        },
+        {
+            "type": "step.twilio_create_workspace",
+            "plugin": "workflow-plugin-twilio",
+            "description": "Create a TaskRouter Workspace.",
+            "configFields": [
+                {
+                    "key": "module",
+                    "label": "Module",
+                    "type": "string",
+                    "description": "Name of the twilio.provider module instance to use (defaults to \"twilio\")"
+                },
+                {
+                    "key": "friendly_name",
+                    "label": "Friendly Name",
+                    "type": "string",
+                    "description": "Workspace name",
+                    "required": true
+                }
+            ],
+            "outputs": [
+                {
+                    "key": "sid",
+                    "type": "string",
+                    "description": "Workspace SID"
+                },
+                {
+                    "key": "friendly_name",
+                    "type": "string",
+                    "description": "Workspace name"
+                },
+                {
+                    "key": "error",
+                    "type": "string",
+                    "description": "Error message if the step failed"
+                }
+            ]
+        },
+        {
+            "type": "step.twilio_delete_message",
+            "plugin": "workflow-plugin-twilio",
+            "description": "Delete a message by SID.",
+            "configFields": [
+                {
+                    "key": "module",
+                    "label": "Module",
+                    "type": "string",
+                    "description": "Name of the twilio.provider module instance to use (defaults to \"twilio\")"
+                },
+                {
+                    "key": "message_sid",
+                    "label": "Message SID",
+                    "type": "string",
+                    "description": "Twilio message SID to delete",
+                    "required": true
+                }
+            ],
+            "outputs": [
+                {
+                    "key": "deleted",
+                    "type": "boolean",
+                    "description": "true when the message was deleted"
+                },
+                {
+                    "key": "error",
+                    "type": "string",
+                    "description": "Error message if the step failed"
+                }
+            ]
+        },
+        {
+            "type": "step.twilio_delete_recording",
+            "plugin": "workflow-plugin-twilio",
+            "description": "Delete a call recording by SID.",
+            "configFields": [
+                {
+                    "key": "module",
+                    "label": "Module",
+                    "type": "string",
+                    "description": "Name of the twilio.provider module instance to use (defaults to \"twilio\")"
+                },
+                {
+                    "key": "recording_sid",
+                    "label": "Recording SID",
+                    "type": "string",
+                    "description": "Recording SID to delete",
+                    "required": true
+                }
+            ],
+            "outputs": [
+                {
+                    "key": "deleted",
+                    "type": "boolean",
+                    "description": "true when the recording was deleted"
+                },
+                {
+                    "key": "error",
+                    "type": "string",
+                    "description": "Error message if the step failed"
+                }
+            ]
+        },
+        {
+            "type": "step.twilio_fetch_call",
+            "plugin": "workflow-plugin-twilio",
+            "description": "Fetch details of a call by SID.",
+            "configFields": [
+                {
+                    "key": "module",
+                    "label": "Module",
+                    "type": "string",
+                    "description": "Name of the twilio.provider module instance to use (defaults to \"twilio\")"
+                },
+                {
+                    "key": "call_sid",
+                    "label": "Call SID",
+                    "type": "string",
+                    "description": "Twilio call SID (starts with CA)",
+                    "required": true
+                }
+            ],
+            "outputs": [
+                {
+                    "key": "sid",
+                    "type": "string",
+                    "description": "Call SID"
+                },
+                {
+                    "key": "status",
+                    "type": "string",
+                    "description": "Call status"
+                },
+                {
+                    "key": "duration",
+                    "type": "string",
+                    "description": "Call duration in seconds"
+                },
+                {
+                    "key": "to",
+                    "type": "string",
+                    "description": "Destination number"
+                },
+                {
+                    "key": "from",
+                    "type": "string",
+                    "description": "Caller ID"
+                },
+                {
+                    "key": "error",
+                    "type": "string",
+                    "description": "Error message if the step failed"
+                }
+            ]
+        },
+        {
+            "type": "step.twilio_fetch_content_template",
+            "plugin": "workflow-plugin-twilio",
+            "description": "Fetch a Content Template by SID.",
+            "configFields": [
+                {
+                    "key": "module",
+                    "label": "Module",
+                    "type": "string",
+                    "description": "Name of the twilio.provider module instance to use (defaults to \"twilio\")"
+                },
+                {
+                    "key": "sid",
+                    "label": "SID",
+                    "type": "string",
+                    "description": "Content template SID to fetch",
+                    "required": true
+                }
+            ],
+            "outputs": [
+                {
+                    "key": "sid",
+                    "type": "string",
+                    "description": "Template SID"
+                },
+                {
+                    "key": "friendly_name",
+                    "type": "string",
+                    "description": "Template name"
+                },
+                {
+                    "key": "error",
+                    "type": "string",
+                    "description": "Error message if the step failed"
+                }
+            ]
+        },
+        {
+            "type": "step.twilio_fetch_conversation",
+            "plugin": "workflow-plugin-twilio",
+            "description": "Fetch a Conversation by SID.",
+            "configFields": [
+                {
+                    "key": "module",
+                    "label": "Module",
+                    "type": "string",
+                    "description": "Name of the twilio.provider module instance to use (defaults to \"twilio\")"
+                },
+                {
+                    "key": "conversation_sid",
+                    "label": "Conversation SID",
+                    "type": "string",
+                    "description": "Conversation SID to fetch",
+                    "required": true
+                }
+            ],
+            "outputs": [
+                {
+                    "key": "sid",
+                    "type": "string",
+                    "description": "Conversation SID"
+                },
+                {
+                    "key": "friendly_name",
+                    "type": "string",
+                    "description": "Conversation name"
+                },
+                {
+                    "key": "state",
+                    "type": "string",
+                    "description": "Conversation state"
+                },
+                {
+                    "key": "error",
+                    "type": "string",
+                    "description": "Error message if the step failed"
+                }
+            ]
+        },
+        {
+            "type": "step.twilio_fetch_execution",
+            "plugin": "workflow-plugin-twilio",
+            "description": "Fetch a Studio Flow execution by SID.",
+            "configFields": [
+                {
+                    "key": "module",
+                    "label": "Module",
+                    "type": "string",
+                    "description": "Name of the twilio.provider module instance to use (defaults to \"twilio\")"
+                },
+                {
+                    "key": "flow_sid",
+                    "label": "Flow SID",
+                    "type": "string",
+                    "description": "Studio flow SID",
+                    "required": true
+                },
+                {
+                    "key": "execution_sid",
+                    "label": "Execution SID",
+                    "type": "string",
+                    "description": "Execution SID to fetch",
+                    "required": true
+                }
+            ],
+            "outputs": [
+                {
+                    "key": "sid",
+                    "type": "string",
+                    "description": "Execution SID"
+                },
+                {
+                    "key": "status",
+                    "type": "string",
+                    "description": "Execution status"
+                },
+                {
+                    "key": "error",
+                    "type": "string",
+                    "description": "Error message if the step failed"
+                }
+            ]
+        },
+        {
+            "type": "step.twilio_fetch_media",
+            "plugin": "workflow-plugin-twilio",
+            "description": "Fetch a media resource attached to a message.",
+            "configFields": [
+                {
+                    "key": "module",
+                    "label": "Module",
+                    "type": "string",
+                    "description": "Name of the twilio.provider module instance to use (defaults to \"twilio\")"
+                },
+                {
+                    "key": "message_sid",
+                    "label": "Message SID",
+                    "type": "string",
+                    "description": "Parent message SID",
+                    "required": true
+                },
+                {
+                    "key": "media_sid",
+                    "label": "Media SID",
+                    "type": "string",
+                    "description": "Media resource SID",
+                    "required": true
+                }
+            ],
+            "outputs": [
+                {
+                    "key": "sid",
+                    "type": "string",
+                    "description": "Media SID"
+                },
+                {
+                    "key": "content_type",
+                    "type": "string",
+                    "description": "MIME content type"
+                },
+                {
+                    "key": "uri",
+                    "type": "string",
+                    "description": "Media URI"
+                },
+                {
+                    "key": "error",
+                    "type": "string",
+                    "description": "Error message if the step failed"
+                }
+            ]
+        },
+        {
+            "type": "step.twilio_fetch_message",
+            "plugin": "workflow-plugin-twilio",
+            "description": "Fetch a single message by SID.",
+            "configFields": [
+                {
+                    "key": "module",
+                    "label": "Module",
+                    "type": "string",
+                    "description": "Name of the twilio.provider module instance to use (defaults to \"twilio\")"
+                },
+                {
+                    "key": "message_sid",
+                    "label": "Message SID",
+                    "type": "string",
+                    "description": "Twilio message SID (starts with SM)",
+                    "required": true
+                }
+            ],
+            "outputs": [
+                {
+                    "key": "sid",
+                    "type": "string",
+                    "description": "Message SID"
+                },
+                {
+                    "key": "status",
+                    "type": "string",
+                    "description": "Message status"
+                },
+                {
+                    "key": "to",
+                    "type": "string",
+                    "description": "Destination number"
+                },
+                {
+                    "key": "from",
+                    "type": "string",
+                    "description": "Sender number"
+                },
+                {
+                    "key": "body",
+                    "type": "string",
+                    "description": "Message body"
+                },
+                {
+                    "key": "error",
+                    "type": "string",
+                    "description": "Error message if the step failed"
+                }
+            ]
+        },
+        {
+            "type": "step.twilio_fetch_pricing",
+            "plugin": "workflow-plugin-twilio",
+            "description": "Fetch voice pricing for a destination number.",
+            "configFields": [
+                {
+                    "key": "module",
+                    "label": "Module",
+                    "type": "string",
+                    "description": "Name of the twilio.provider module instance to use (defaults to \"twilio\")"
+                },
+                {
+                    "key": "destination_number",
+                    "label": "Destination Number",
+                    "type": "string",
+                    "description": "Destination phone number to get pricing for",
+                    "required": true
+                },
+                {
+                    "key": "origination_number",
+                    "label": "Origination Number",
+                    "type": "string",
+                    "description": "Origination number for inbound pricing"
+                }
+            ],
+            "outputs": [
+                {
+                    "key": "destination_number",
+                    "type": "string",
+                    "description": "Destination number"
+                },
+                {
+                    "key": "country",
+                    "type": "string",
+                    "description": "Country name"
+                },
+                {
+                    "key": "error",
+                    "type": "string",
+                    "description": "Error message if the step failed"
+                }
+            ]
+        },
+        {
+            "type": "step.twilio_fetch_recording",
+            "plugin": "workflow-plugin-twilio",
+            "description": "Fetch a call recording by SID.",
+            "configFields": [
+                {
+                    "key": "module",
+                    "label": "Module",
+                    "type": "string",
+                    "description": "Name of the twilio.provider module instance to use (defaults to \"twilio\")"
+                },
+                {
+                    "key": "recording_sid",
+                    "label": "Recording SID",
+                    "type": "string",
+                    "description": "Twilio recording SID (starts with RE)",
+                    "required": true
+                }
+            ],
+            "outputs": [
+                {
+                    "key": "sid",
+                    "type": "string",
+                    "description": "Recording SID"
+                },
+                {
+                    "key": "duration",
+                    "type": "string",
+                    "description": "Duration in seconds"
+                },
+                {
+                    "key": "status",
+                    "type": "string",
+                    "description": "Recording status"
+                },
+                {
+                    "key": "error",
+                    "type": "string",
+                    "description": "Error message if the step failed"
+                }
+            ]
+        },
+        {
+            "type": "step.twilio_fetch_room",
+            "plugin": "workflow-plugin-twilio",
+            "description": "Fetch a Video Room by SID.",
+            "configFields": [
+                {
+                    "key": "module",
+                    "label": "Module",
+                    "type": "string",
+                    "description": "Name of the twilio.provider module instance to use (defaults to \"twilio\")"
+                },
+                {
+                    "key": "room_sid",
+                    "label": "Room SID",
+                    "type": "string",
+                    "description": "Room SID to fetch",
+                    "required": true
+                }
+            ],
+            "outputs": [
+                {
+                    "key": "sid",
+                    "type": "string",
+                    "description": "Room SID"
+                },
+                {
+                    "key": "unique_name",
+                    "type": "string",
+                    "description": "Room unique name"
+                },
+                {
+                    "key": "status",
+                    "type": "string",
+                    "description": "Room status"
+                },
+                {
+                    "key": "error",
+                    "type": "string",
+                    "description": "Error message if the step failed"
+                }
+            ]
+        },
+        {
+            "type": "step.twilio_fetch_sim",
+            "plugin": "workflow-plugin-twilio",
+            "description": "Fetch a Wireless SIM by SID.",
+            "configFields": [
+                {
+                    "key": "module",
+                    "label": "Module",
+                    "type": "string",
+                    "description": "Name of the twilio.provider module instance to use (defaults to \"twilio\")"
+                },
+                {
+                    "key": "sim_sid",
+                    "label": "SIM SID",
+                    "type": "string",
+                    "description": "SIM SID to fetch",
+                    "required": true
+                }
+            ],
+            "outputs": [
+                {
+                    "key": "sid",
+                    "type": "string",
+                    "description": "SIM SID"
+                },
+                {
+                    "key": "unique_name",
+                    "type": "string",
+                    "description": "SIM unique name"
+                },
+                {
+                    "key": "status",
+                    "type": "string",
+                    "description": "SIM status"
+                },
+                {
+                    "key": "error",
+                    "type": "string",
+                    "description": "Error message if the step failed"
+                }
+            ]
+        },
+        {
+            "type": "step.twilio_fetch_transcript",
+            "plugin": "workflow-plugin-twilio",
+            "description": "Fetch a transcript by SID.",
+            "configFields": [
+                {
+                    "key": "module",
+                    "label": "Module",
+                    "type": "string",
+                    "description": "Name of the twilio.provider module instance to use (defaults to \"twilio\")"
+                },
+                {
+                    "key": "sid",
+                    "label": "SID",
+                    "type": "string",
+                    "description": "Transcript SID to fetch",
+                    "required": true
+                }
+            ],
+            "outputs": [
+                {
+                    "key": "sid",
+                    "type": "string",
+                    "description": "Transcript SID"
+                },
+                {
+                    "key": "status",
+                    "type": "string",
+                    "description": "Transcript status"
+                },
+                {
+                    "key": "error",
+                    "type": "string",
+                    "description": "Error message if the step failed"
+                }
+            ]
+        },
+        {
+            "type": "step.twilio_fetch_trust_product",
+            "plugin": "workflow-plugin-twilio",
+            "description": "Fetch a TrustHub Trust Product by SID.",
+            "configFields": [
+                {
+                    "key": "module",
+                    "label": "Module",
+                    "type": "string",
+                    "description": "Name of the twilio.provider module instance to use (defaults to \"twilio\")"
+                },
+                {
+                    "key": "sid",
+                    "label": "SID",
+                    "type": "string",
+                    "description": "Trust product SID to fetch",
+                    "required": true
+                }
+            ],
+            "outputs": [
+                {
+                    "key": "sid",
+                    "type": "string",
+                    "description": "Trust product SID"
+                },
+                {
+                    "key": "friendly_name",
+                    "type": "string",
+                    "description": "Product name"
+                },
+                {
+                    "key": "status",
+                    "type": "string",
+                    "description": "Registration status"
+                },
+                {
+                    "key": "error",
+                    "type": "string",
+                    "description": "Error message if the step failed"
+                }
+            ]
+        },
+        {
+            "type": "step.twilio_list_accounts",
+            "plugin": "workflow-plugin-twilio",
+            "description": "List sub-accounts under the master account.",
+            "configFields": [
+                {
+                    "key": "module",
+                    "label": "Module",
+                    "type": "string",
+                    "description": "Name of the twilio.provider module instance to use (defaults to \"twilio\")"
+                }
+            ],
+            "outputs": [
+                {
+                    "key": "accounts",
+                    "type": "array",
+                    "description": "List of account objects"
+                },
+                {
+                    "key": "count",
+                    "type": "number",
+                    "description": "Number of accounts"
+                },
+                {
+                    "key": "error",
+                    "type": "string",
+                    "description": "Error message if the step failed"
+                }
+            ]
+        },
+        {
+            "type": "step.twilio_list_api_keys",
+            "plugin": "workflow-plugin-twilio",
+            "description": "List API Keys in the account.",
+            "configFields": [
+                {
+                    "key": "module",
+                    "label": "Module",
+                    "type": "string",
+                    "description": "Name of the twilio.provider module instance to use (defaults to \"twilio\")"
+                }
+            ],
+            "outputs": [
+                {
+                    "key": "keys",
+                    "type": "array",
+                    "description": "List of API key objects"
+                },
+                {
+                    "key": "count",
+                    "type": "number",
+                    "description": "Number of keys"
+                },
+                {
+                    "key": "error",
+                    "type": "string",
+                    "description": "Error message if the step failed"
+                }
+            ]
+        },
+        {
+            "type": "step.twilio_list_assistants",
+            "plugin": "workflow-plugin-twilio",
+            "description": "List Twilio AI Assistants.",
+            "configFields": [
+                {
+                    "key": "module",
+                    "label": "Module",
+                    "type": "string",
+                    "description": "Name of the twilio.provider module instance to use (defaults to \"twilio\")"
+                }
+            ],
+            "outputs": [
+                {
+                    "key": "assistants",
+                    "type": "array",
+                    "description": "List of assistant objects"
+                },
+                {
+                    "key": "count",
+                    "type": "number",
+                    "description": "Number of assistants"
+                },
+                {
+                    "key": "error",
+                    "type": "string",
+                    "description": "Error message if the step failed"
+                }
+            ]
+        },
+        {
+            "type": "step.twilio_list_bindings",
+            "plugin": "workflow-plugin-twilio",
+            "description": "List device bindings for a Notify service.",
+            "configFields": [
+                {
+                    "key": "module",
+                    "label": "Module",
+                    "type": "string",
+                    "description": "Name of the twilio.provider module instance to use (defaults to \"twilio\")"
+                },
+                {
+                    "key": "service_sid",
+                    "label": "Service SID",
+                    "type": "string",
+                    "description": "Notify service SID",
+                    "required": true
+                }
+            ],
+            "outputs": [
+                {
+                    "key": "bindings",
+                    "type": "array",
+                    "description": "List of binding objects"
+                },
+                {
+                    "key": "count",
+                    "type": "number",
+                    "description": "Number of bindings"
+                },
+                {
+                    "key": "error",
+                    "type": "string",
+                    "description": "Error message if the step failed"
+                }
+            ]
+        },
+        {
+            "type": "step.twilio_list_calls",
+            "plugin": "workflow-plugin-twilio",
+            "description": "List calls, optionally filtered by to/from.",
+            "configFields": [
+                {
+                    "key": "module",
+                    "label": "Module",
+                    "type": "string",
+                    "description": "Name of the twilio.provider module instance to use (defaults to \"twilio\")"
+                },
+                {
+                    "key": "to",
+                    "label": "To",
+                    "type": "string",
+                    "description": "Filter by destination number"
+                },
+                {
+                    "key": "from",
+                    "label": "From",
+                    "type": "string",
+                    "description": "Filter by caller number"
+                }
+            ],
+            "outputs": [
+                {
+                    "key": "calls",
+                    "type": "array",
+                    "description": "List of call objects"
+                },
+                {
+                    "key": "count",
+                    "type": "number",
+                    "description": "Number of calls returned"
+                },
+                {
+                    "key": "error",
+                    "type": "string",
+                    "description": "Error message if the step failed"
+                }
+            ]
+        },
+        {
+            "type": "step.twilio_list_conferences",
+            "plugin": "workflow-plugin-twilio",
+            "description": "List all conferences in the account.",
+            "configFields": [
+                {
+                    "key": "module",
+                    "label": "Module",
+                    "type": "string",
+                    "description": "Name of the twilio.provider module instance to use (defaults to \"twilio\")"
+                }
+            ],
+            "outputs": [
+                {
+                    "key": "conferences",
+                    "type": "array",
+                    "description": "List of conference objects"
+                },
+                {
+                    "key": "count",
+                    "type": "number",
+                    "description": "Number of conferences"
+                },
+                {
+                    "key": "error",
+                    "type": "string",
+                    "description": "Error message if the step failed"
+                }
+            ]
+        },
+        {
+            "type": "step.twilio_list_content_templates",
+            "plugin": "workflow-plugin-twilio",
+            "description": "List Content Templates.",
+            "configFields": [
+                {
+                    "key": "module",
+                    "label": "Module",
+                    "type": "string",
+                    "description": "Name of the twilio.provider module instance to use (defaults to \"twilio\")"
+                }
+            ],
+            "outputs": [
+                {
+                    "key": "templates",
+                    "type": "array",
+                    "description": "List of content template objects"
+                },
+                {
+                    "key": "count",
+                    "type": "number",
+                    "description": "Number of templates"
+                },
+                {
+                    "key": "error",
+                    "type": "string",
+                    "description": "Error message if the step failed"
+                }
+            ]
+        },
+        {
+            "type": "step.twilio_list_conversation_messages",
+            "plugin": "workflow-plugin-twilio",
+            "description": "List messages in a Conversation.",
+            "configFields": [
+                {
+                    "key": "module",
+                    "label": "Module",
+                    "type": "string",
+                    "description": "Name of the twilio.provider module instance to use (defaults to \"twilio\")"
+                },
+                {
+                    "key": "conversation_sid",
+                    "label": "Conversation SID",
+                    "type": "string",
+                    "description": "Conversation to list messages for",
+                    "required": true
+                }
+            ],
+            "outputs": [
+                {
+                    "key": "messages",
+                    "type": "array",
+                    "description": "List of message objects"
+                },
+                {
+                    "key": "count",
+                    "type": "number",
+                    "description": "Number of messages"
+                },
+                {
+                    "key": "error",
+                    "type": "string",
+                    "description": "Error message if the step failed"
+                }
+            ]
+        },
+        {
+            "type": "step.twilio_list_conversations",
+            "plugin": "workflow-plugin-twilio",
+            "description": "List all Conversations.",
+            "configFields": [
+                {
+                    "key": "module",
+                    "label": "Module",
+                    "type": "string",
+                    "description": "Name of the twilio.provider module instance to use (defaults to \"twilio\")"
+                }
+            ],
+            "outputs": [
+                {
+                    "key": "conversations",
+                    "type": "array",
+                    "description": "List of conversation objects"
+                },
+                {
+                    "key": "count",
+                    "type": "number",
+                    "description": "Number of conversations"
+                },
+                {
+                    "key": "error",
+                    "type": "string",
+                    "description": "Error message if the step failed"
+                }
+            ]
+        },
+        {
+            "type": "step.twilio_list_flex_flows",
+            "plugin": "workflow-plugin-twilio",
+            "description": "List Flex Flows.",
+            "configFields": [
+                {
+                    "key": "module",
+                    "label": "Module",
+                    "type": "string",
+                    "description": "Name of the twilio.provider module instance to use (defaults to \"twilio\")"
+                }
+            ],
+            "outputs": [
+                {
+                    "key": "flows",
+                    "type": "array",
+                    "description": "List of flex flow objects"
+                },
+                {
+                    "key": "count",
+                    "type": "number",
+                    "description": "Number of flows"
+                },
+                {
+                    "key": "error",
+                    "type": "string",
+                    "description": "Error message if the step failed"
+                }
+            ]
+        },
+        {
+            "type": "step.twilio_list_flows",
+            "plugin": "workflow-plugin-twilio",
+            "description": "List Studio Flows.",
+            "configFields": [
+                {
+                    "key": "module",
+                    "label": "Module",
+                    "type": "string",
+                    "description": "Name of the twilio.provider module instance to use (defaults to \"twilio\")"
+                }
+            ],
+            "outputs": [
+                {
+                    "key": "flows",
+                    "type": "array",
+                    "description": "List of flow objects"
+                },
+                {
+                    "key": "count",
+                    "type": "number",
+                    "description": "Number of flows"
+                },
+                {
+                    "key": "error",
+                    "type": "string",
+                    "description": "Error message if the step failed"
+                }
+            ]
+        },
+        {
+            "type": "step.twilio_list_messages",
+            "plugin": "workflow-plugin-twilio",
+            "description": "List messages from the Twilio account, optionally filtered by to/from.",
+            "configFields": [
+                {
+                    "key": "module",
+                    "label": "Module",
+                    "type": "string",
+                    "description": "Name of the twilio.provider module instance to use (defaults to \"twilio\")"
+                },
+                {
+                    "key": "to",
+                    "label": "To",
+                    "type": "string",
+                    "description": "Filter by destination phone number"
+                },
+                {
+                    "key": "from",
+                    "label": "From",
+                    "type": "string",
+                    "description": "Filter by sender phone number"
+                }
+            ],
+            "outputs": [
+                {
+                    "key": "messages",
+                    "type": "array",
+                    "description": "List of message objects"
+                },
+                {
+                    "key": "count",
+                    "type": "number",
+                    "description": "Number of messages returned"
+                },
+                {
+                    "key": "error",
+                    "type": "string",
+                    "description": "Error message if the step failed"
+                }
+            ]
+        },
+        {
+            "type": "step.twilio_list_numbers",
+            "plugin": "workflow-plugin-twilio",
+            "description": "List incoming phone numbers in the account.",
+            "configFields": [
+                {
+                    "key": "module",
+                    "label": "Module",
+                    "type": "string",
+                    "description": "Name of the twilio.provider module instance to use (defaults to \"twilio\")"
+                }
+            ],
+            "outputs": [
+                {
+                    "key": "numbers",
+                    "type": "array",
+                    "description": "List of phone number objects"
+                },
+                {
+                    "key": "count",
+                    "type": "number",
+                    "description": "Number of results"
+                },
+                {
+                    "key": "error",
+                    "type": "string",
+                    "description": "Error message if the step failed"
+                }
+            ]
+        },
+        {
+            "type": "step.twilio_list_recordings",
+            "plugin": "workflow-plugin-twilio",
+            "description": "List call recordings, optionally filtered by call SID.",
+            "configFields": [
+                {
+                    "key": "module",
+                    "label": "Module",
+                    "type": "string",
+                    "description": "Name of the twilio.provider module instance to use (defaults to \"twilio\")"
+                },
+                {
+                    "key": "call_sid",
+                    "label": "Call SID",
+                    "type": "string",
+                    "description": "Filter by call SID"
+                }
+            ],
+            "outputs": [
+                {
+                    "key": "recordings",
+                    "type": "array",
+                    "description": "List of recording objects"
+                },
+                {
+                    "key": "count",
+                    "type": "number",
+                    "description": "Number of recordings"
+                },
+                {
+                    "key": "error",
+                    "type": "string",
+                    "description": "Error message if the step failed"
+                }
+            ]
+        },
+        {
+            "type": "step.twilio_list_room_recordings",
+            "plugin": "workflow-plugin-twilio",
+            "description": "List recordings for a Video Room.",
+            "configFields": [
+                {
+                    "key": "module",
+                    "label": "Module",
+                    "type": "string",
+                    "description": "Name of the twilio.provider module instance to use (defaults to \"twilio\")"
+                },
+                {
+                    "key": "room_sid",
+                    "label": "Room SID",
+                    "type": "string",
+                    "description": "Room SID to list recordings for",
+                    "required": true
+                }
+            ],
+            "outputs": [
+                {
+                    "key": "recordings",
+                    "type": "array",
+                    "description": "List of recording objects"
+                },
+                {
+                    "key": "count",
+                    "type": "number",
+                    "description": "Number of recordings"
+                },
+                {
+                    "key": "error",
+                    "type": "string",
+                    "description": "Error message if the step failed"
+                }
+            ]
+        },
+        {
+            "type": "step.twilio_list_rooms",
+            "plugin": "workflow-plugin-twilio",
+            "description": "List Video Rooms, optionally filtered by status.",
+            "configFields": [
+                {
+                    "key": "module",
+                    "label": "Module",
+                    "type": "string",
+                    "description": "Name of the twilio.provider module instance to use (defaults to \"twilio\")"
+                },
+                {
+                    "key": "status",
+                    "label": "Status",
+                    "type": "string",
+                    "description": "Filter by status: in-progress or completed"
+                }
+            ],
+            "outputs": [
+                {
+                    "key": "rooms",
+                    "type": "array",
+                    "description": "List of room objects"
+                },
+                {
+                    "key": "count",
+                    "type": "number",
+                    "description": "Number of rooms"
+                },
+                {
+                    "key": "error",
+                    "type": "string",
+                    "description": "Error message if the step failed"
+                }
+            ]
+        },
+        {
+            "type": "step.twilio_list_serverless_services",
+            "plugin": "workflow-plugin-twilio",
+            "description": "List Serverless Services.",
+            "configFields": [
+                {
+                    "key": "module",
+                    "label": "Module",
+                    "type": "string",
+                    "description": "Name of the twilio.provider module instance to use (defaults to \"twilio\")"
+                }
+            ],
+            "outputs": [
+                {
+                    "key": "services",
+                    "type": "array",
+                    "description": "List of serverless service objects"
+                },
+                {
+                    "key": "count",
+                    "type": "number",
+                    "description": "Number of services"
+                },
+                {
+                    "key": "error",
+                    "type": "string",
+                    "description": "Error message if the step failed"
+                }
+            ]
+        },
+        {
+            "type": "step.twilio_list_sims",
+            "plugin": "workflow-plugin-twilio",
+            "description": "List Wireless SIMs.",
+            "configFields": [
+                {
+                    "key": "module",
+                    "label": "Module",
+                    "type": "string",
+                    "description": "Name of the twilio.provider module instance to use (defaults to \"twilio\")"
+                }
+            ],
+            "outputs": [
+                {
+                    "key": "sims",
+                    "type": "array",
+                    "description": "List of SIM objects"
+                },
+                {
+                    "key": "count",
+                    "type": "number",
+                    "description": "Number of SIMs"
+                },
+                {
+                    "key": "error",
+                    "type": "string",
+                    "description": "Error message if the step failed"
+                }
+            ]
+        },
+        {
+            "type": "step.twilio_list_tasks",
+            "plugin": "workflow-plugin-twilio",
+            "description": "List tasks in a TaskRouter Workspace.",
+            "configFields": [
+                {
+                    "key": "module",
+                    "label": "Module",
+                    "type": "string",
+                    "description": "Name of the twilio.provider module instance to use (defaults to \"twilio\")"
+                },
+                {
+                    "key": "workspace_sid",
+                    "label": "Workspace SID",
+                    "type": "string",
+                    "description": "Target workspace SID",
+                    "required": true
+                }
+            ],
+            "outputs": [
+                {
+                    "key": "tasks",
+                    "type": "array",
+                    "description": "List of task objects"
+                },
+                {
+                    "key": "count",
+                    "type": "number",
+                    "description": "Number of tasks"
+                },
+                {
+                    "key": "error",
+                    "type": "string",
+                    "description": "Error message if the step failed"
+                }
+            ]
+        },
+        {
+            "type": "step.twilio_list_transcripts",
+            "plugin": "workflow-plugin-twilio",
+            "description": "List transcripts, optionally filtered by service.",
+            "configFields": [
+                {
+                    "key": "module",
+                    "label": "Module",
+                    "type": "string",
+                    "description": "Name of the twilio.provider module instance to use (defaults to \"twilio\")"
+                },
+                {
+                    "key": "service_sid",
+                    "label": "Service SID",
+                    "type": "string",
+                    "description": "Filter by intelligence service SID"
+                }
+            ],
+            "outputs": [
+                {
+                    "key": "transcripts",
+                    "type": "array",
+                    "description": "List of transcript objects"
+                },
+                {
+                    "key": "count",
+                    "type": "number",
+                    "description": "Number of transcripts"
+                },
+                {
+                    "key": "error",
+                    "type": "string",
+                    "description": "Error message if the step failed"
+                }
+            ]
+        },
+        {
+            "type": "step.twilio_list_trust_products",
+            "plugin": "workflow-plugin-twilio",
+            "description": "List TrustHub Trust Products.",
+            "configFields": [
+                {
+                    "key": "module",
+                    "label": "Module",
+                    "type": "string",
+                    "description": "Name of the twilio.provider module instance to use (defaults to \"twilio\")"
+                }
+            ],
+            "outputs": [
+                {
+                    "key": "products",
+                    "type": "array",
+                    "description": "List of trust product objects"
+                },
+                {
+                    "key": "count",
+                    "type": "number",
+                    "description": "Number of products"
+                },
+                {
+                    "key": "error",
+                    "type": "string",
+                    "description": "Error message if the step failed"
+                }
+            ]
+        },
+        {
+            "type": "step.twilio_list_usage_records",
+            "plugin": "workflow-plugin-twilio",
+            "description": "List usage records for the account.",
+            "configFields": [
+                {
+                    "key": "module",
+                    "label": "Module",
+                    "type": "string",
+                    "description": "Name of the twilio.provider module instance to use (defaults to \"twilio\")"
+                },
+                {
+                    "key": "category",
+                    "label": "Category",
+                    "type": "string",
+                    "description": "Usage category filter (e.g. calls, sms, recordings)"
+                }
+            ],
+            "outputs": [
+                {
+                    "key": "records",
+                    "type": "array",
+                    "description": "List of usage record objects"
+                },
+                {
+                    "key": "count",
+                    "type": "number",
+                    "description": "Number of records"
+                },
+                {
+                    "key": "error",
+                    "type": "string",
+                    "description": "Error message if the step failed"
+                }
+            ]
+        },
+        {
+            "type": "step.twilio_list_verify_services",
+            "plugin": "workflow-plugin-twilio",
+            "description": "List all Twilio Verify Services.",
+            "configFields": [
+                {
+                    "key": "module",
+                    "label": "Module",
+                    "type": "string",
+                    "description": "Name of the twilio.provider module instance to use (defaults to \"twilio\")"
+                }
+            ],
+            "outputs": [
+                {
+                    "key": "services",
+                    "type": "array",
+                    "description": "List of verify service objects"
+                },
+                {
+                    "key": "count",
+                    "type": "number",
+                    "description": "Number of services"
+                },
+                {
+                    "key": "error",
+                    "type": "string",
+                    "description": "Error message if the step failed"
+                }
+            ]
+        },
+        {
+            "type": "step.twilio_lookup_phone",
+            "plugin": "workflow-plugin-twilio",
+            "description": "Look up phone number metadata using Twilio Lookup.",
+            "configFields": [
+                {
+                    "key": "module",
+                    "label": "Module",
+                    "type": "string",
+                    "description": "Name of the twilio.provider module instance to use (defaults to \"twilio\")"
+                },
+                {
+                    "key": "phone_number",
+                    "label": "Phone Number",
+                    "type": "string",
+                    "description": "Phone number to look up in E.164 format",
+                    "required": true
+                },
+                {
+                    "key": "fields",
+                    "label": "Fields",
+                    "type": "string",
+                    "description": "Comma-separated list of lookup fields (e.g. line_type_intelligence, caller_name)"
+                }
+            ],
+            "outputs": [
+                {
+                    "key": "phone_number",
+                    "type": "string",
+                    "description": "E.164 formatted number"
+                },
+                {
+                    "key": "country_code",
+                    "type": "string",
+                    "description": "ISO country code"
+                },
+                {
+                    "key": "national_format",
+                    "type": "string",
+                    "description": "Locally formatted number"
+                },
+                {
+                    "key": "valid",
+                    "type": "boolean",
+                    "description": "Whether the number is valid"
+                },
+                {
+                    "key": "error",
+                    "type": "string",
+                    "description": "Error message if the step failed"
+                }
+            ]
+        },
+        {
+            "type": "step.twilio_release_number",
+            "plugin": "workflow-plugin-twilio",
+            "description": "Release (delete) an incoming phone number.",
+            "configFields": [
+                {
+                    "key": "module",
+                    "label": "Module",
+                    "type": "string",
+                    "description": "Name of the twilio.provider module instance to use (defaults to \"twilio\")"
+                },
+                {
+                    "key": "sid",
+                    "label": "SID",
+                    "type": "string",
+                    "description": "Phone number SID to release",
+                    "required": true
+                }
+            ],
+            "outputs": [
+                {
+                    "key": "deleted",
+                    "type": "boolean",
+                    "description": "true when the number was released"
+                },
+                {
+                    "key": "error",
+                    "type": "string",
+                    "description": "Error message if the step failed"
+                }
+            ]
+        },
+        {
+            "type": "step.twilio_search_available",
+            "plugin": "workflow-plugin-twilio",
+            "description": "Search for available phone numbers to purchase.",
+            "configFields": [
+                {
+                    "key": "module",
+                    "label": "Module",
+                    "type": "string",
+                    "description": "Name of the twilio.provider module instance to use (defaults to \"twilio\")"
+                },
+                {
+                    "key": "country_code",
+                    "label": "Country Code",
+                    "type": "string",
+                    "description": "ISO country code (e.g. US, GB)",
+                    "required": true
+                },
+                {
+                    "key": "contains",
+                    "label": "Contains",
+                    "type": "string",
+                    "description": "Pattern to match in the phone number"
+                }
+            ],
+            "outputs": [
+                {
+                    "key": "numbers",
+                    "type": "array",
+                    "description": "List of available number objects"
+                },
+                {
+                    "key": "count",
+                    "type": "number",
+                    "description": "Number of results"
+                },
+                {
+                    "key": "error",
+                    "type": "string",
+                    "description": "Error message if the step failed"
+                }
+            ]
+        },
+        {
+            "type": "step.twilio_send_command",
+            "plugin": "workflow-plugin-twilio",
+            "description": "Send a command to a Wireless SIM device.",
+            "configFields": [
+                {
+                    "key": "module",
+                    "label": "Module",
+                    "type": "string",
+                    "description": "Name of the twilio.provider module instance to use (defaults to \"twilio\")"
+                },
+                {
+                    "key": "command",
+                    "label": "Command",
+                    "type": "string",
+                    "description": "Command string to send to the device",
+                    "required": true
+                },
+                {
+                    "key": "sim",
+                    "label": "SIM",
+                    "type": "string",
+                    "description": "Target SIM SID or unique name"
+                }
+            ],
+            "outputs": [
+                {
+                    "key": "sid",
+                    "type": "string",
+                    "description": "Command SID"
+                },
+                {
+                    "key": "status",
+                    "type": "string",
+                    "description": "Command status"
+                },
+                {
+                    "key": "error",
+                    "type": "string",
+                    "description": "Error message if the step failed"
+                }
+            ]
+        },
+        {
+            "type": "step.twilio_send_conversation_message",
+            "plugin": "workflow-plugin-twilio",
+            "description": "Send a message to a Twilio Conversation.",
+            "configFields": [
+                {
+                    "key": "module",
+                    "label": "Module",
+                    "type": "string",
+                    "description": "Name of the twilio.provider module instance to use (defaults to \"twilio\")"
+                },
+                {
+                    "key": "conversation_sid",
+                    "label": "Conversation SID",
+                    "type": "string",
+                    "description": "Target conversation SID",
+                    "required": true
+                },
+                {
+                    "key": "author",
+                    "label": "Author",
+                    "type": "string",
+                    "description": "Message author identity"
+                },
+                {
+                    "key": "body",
+                    "label": "Body",
+                    "type": "string",
+                    "description": "Message body text"
+                }
+            ],
+            "outputs": [
+                {
+                    "key": "sid",
+                    "type": "string",
+                    "description": "Message SID"
+                },
+                {
+                    "key": "body",
+                    "type": "string",
+                    "description": "Message body"
+                },
+                {
+                    "key": "error",
+                    "type": "string",
+                    "description": "Error message if the step failed"
+                }
+            ]
+        },
+        {
+            "type": "step.twilio_send_mms",
+            "plugin": "workflow-plugin-twilio",
+            "description": "Send an MMS message (with optional media URL) via Twilio.",
+            "configFields": [
+                {
+                    "key": "module",
+                    "label": "Module",
+                    "type": "string",
+                    "description": "Name of the twilio.provider module instance to use (defaults to \"twilio\")"
+                },
+                {
+                    "key": "to",
+                    "label": "To",
+                    "type": "string",
+                    "description": "Destination phone number in E.164 format",
+                    "required": true
+                },
+                {
+                    "key": "from",
+                    "label": "From",
+                    "type": "string",
+                    "description": "Sender phone number"
+                },
+                {
+                    "key": "body",
+                    "label": "Body",
+                    "type": "string",
+                    "description": "Message body text"
+                },
+                {
+                    "key": "media_url",
+                    "label": "Media URL",
+                    "type": "string",
+                    "description": "Public URL of the media attachment"
+                }
+            ],
+            "outputs": [
+                {
+                    "key": "sid",
+                    "type": "string",
+                    "description": "Twilio message SID"
+                },
+                {
+                    "key": "status",
+                    "type": "string",
+                    "description": "Message status"
+                },
+                {
+                    "key": "to",
+                    "type": "string",
+                    "description": "Destination number"
+                },
+                {
+                    "key": "from",
+                    "type": "string",
+                    "description": "Sender number"
+                },
+                {
+                    "key": "error",
+                    "type": "string",
+                    "description": "Error message if the step failed"
+                }
+            ]
+        },
+        {
+            "type": "step.twilio_send_notification",
+            "plugin": "workflow-plugin-twilio",
+            "description": "Send a push notification via Twilio Notify.",
+            "configFields": [
+                {
+                    "key": "module",
+                    "label": "Module",
+                    "type": "string",
+                    "description": "Name of the twilio.provider module instance to use (defaults to \"twilio\")"
+                },
+                {
+                    "key": "service_sid",
+                    "label": "Service SID",
+                    "type": "string",
+                    "description": "Notify service SID",
+                    "required": true
+                },
+                {
+                    "key": "body",
+                    "label": "Body",
+                    "type": "string",
+                    "description": "Notification body text"
+                },
+                {
+                    "key": "title",
+                    "label": "Title",
+                    "type": "string",
+                    "description": "Notification title"
+                },
+                {
+                    "key": "identity",
+                    "label": "Identity",
+                    "type": "string",
+                    "description": "Target user identity"
+                }
+            ],
+            "outputs": [
+                {
+                    "key": "sid",
+                    "type": "string",
+                    "description": "Notification SID"
+                },
+                {
+                    "key": "error",
+                    "type": "string",
+                    "description": "Error message if the step failed"
+                }
+            ]
+        },
+        {
+            "type": "step.twilio_send_sms",
+            "plugin": "workflow-plugin-twilio",
+            "description": "Send an SMS message via Twilio.",
+            "configFields": [
+                {
+                    "key": "module",
+                    "label": "Module",
+                    "type": "string",
+                    "description": "Name of the twilio.provider module instance to use (defaults to \"twilio\")"
+                },
+                {
+                    "key": "to",
+                    "label": "To",
+                    "type": "string",
+                    "description": "Destination phone number in E.164 format",
+                    "required": true
+                },
+                {
+                    "key": "from",
+                    "label": "From",
+                    "type": "string",
+                    "description": "Sender phone number or messaging service SID"
+                },
+                {
+                    "key": "body",
+                    "label": "Body",
+                    "type": "string",
+                    "description": "Message body text"
+                }
+            ],
+            "outputs": [
+                {
+                    "key": "sid",
+                    "type": "string",
+                    "description": "Twilio message SID"
+                },
+                {
+                    "key": "status",
+                    "type": "string",
+                    "description": "Message status (e.g. queued, sent, delivered)"
+                },
+                {
+                    "key": "to",
+                    "type": "string",
+                    "description": "Destination number"
+                },
+                {
+                    "key": "from",
+                    "type": "string",
+                    "description": "Sender number"
+                },
+                {
+                    "key": "body",
+                    "type": "string",
+                    "description": "Message body"
+                },
+                {
+                    "key": "error",
+                    "type": "string",
+                    "description": "Error message if the step failed"
+                }
+            ]
+        },
+        {
+            "type": "step.twilio_send_verification",
+            "plugin": "workflow-plugin-twilio",
+            "description": "Send a phone verification code via Twilio Verify.",
+            "configFields": [
+                {
+                    "key": "module",
+                    "label": "Module",
+                    "type": "string",
+                    "description": "Name of the twilio.provider module instance to use (defaults to \"twilio\")"
+                },
+                {
+                    "key": "service_sid",
+                    "label": "Service SID",
+                    "type": "string",
+                    "description": "Verify service SID",
+                    "required": true
+                },
+                {
+                    "key": "to",
+                    "label": "To",
+                    "type": "string",
+                    "description": "Phone number to verify",
+                    "required": true
+                },
+                {
+                    "key": "channel",
+                    "label": "Channel",
+                    "type": "string",
+                    "description": "Delivery channel: sms, call, email, totp"
+                }
+            ],
+            "outputs": [
+                {
+                    "key": "sid",
+                    "type": "string",
+                    "description": "Verification SID"
+                },
+                {
+                    "key": "status",
+                    "type": "string",
+                    "description": "Verification status"
+                },
+                {
+                    "key": "to",
+                    "type": "string",
+                    "description": "Destination"
+                },
+                {
+                    "key": "channel",
+                    "type": "string",
+                    "description": "Channel used"
+                },
+                {
+                    "key": "error",
+                    "type": "string",
+                    "description": "Error message if the step failed"
+                }
+            ]
+        },
+        {
+            "type": "step.twilio_send_whatsapp",
+            "plugin": "workflow-plugin-twilio",
+            "description": "Send a WhatsApp message via Twilio.",
+            "configFields": [
+                {
+                    "key": "module",
+                    "label": "Module",
+                    "type": "string",
+                    "description": "Name of the twilio.provider module instance to use (defaults to \"twilio\")"
+                },
+                {
+                    "key": "to",
+                    "label": "To",
+                    "type": "string",
+                    "description": "Destination WhatsApp number (whatsapp: prefix added automatically)",
+                    "required": true
+                },
+                {
+                    "key": "from",
+                    "label": "From",
+                    "type": "string",
+                    "description": "Sender WhatsApp number"
+                },
+                {
+                    "key": "body",
+                    "label": "Body",
+                    "type": "string",
+                    "description": "Message body text"
+                }
+            ],
+            "outputs": [
+                {
+                    "key": "sid",
+                    "type": "string",
+                    "description": "Twilio message SID"
+                },
+                {
+                    "key": "status",
+                    "type": "string",
+                    "description": "Message status"
+                },
+                {
+                    "key": "error",
+                    "type": "string",
+                    "description": "Error message if the step failed"
+                }
+            ]
+        },
+        {
+            "type": "step.twilio_trigger_flow",
+            "plugin": "workflow-plugin-twilio",
+            "description": "Trigger a Twilio Studio Flow execution.",
+            "configFields": [
+                {
+                    "key": "module",
+                    "label": "Module",
+                    "type": "string",
+                    "description": "Name of the twilio.provider module instance to use (defaults to \"twilio\")"
+                },
+                {
+                    "key": "flow_sid",
+                    "label": "Flow SID",
+                    "type": "string",
+                    "description": "Studio flow SID (starts with FW)",
+                    "required": true
+                },
+                {
+                    "key": "to",
+                    "label": "To",
+                    "type": "string",
+                    "description": "Contact phone number"
+                },
+                {
+                    "key": "from",
+                    "label": "From",
+                    "type": "string",
+                    "description": "Twilio phone number"
+                }
+            ],
+            "outputs": [
+                {
+                    "key": "sid",
+                    "type": "string",
+                    "description": "Execution SID"
+                },
+                {
+                    "key": "status",
+                    "type": "string",
+                    "description": "Execution status"
+                },
+                {
+                    "key": "error",
+                    "type": "string",
+                    "description": "Error message if the step failed"
+                }
+            ]
+        },
+        {
+            "type": "step.twilio_update_call",
+            "plugin": "workflow-plugin-twilio",
+            "description": "Update an in-progress call (e.g. redirect or terminate).",
+            "configFields": [
+                {
+                    "key": "module",
+                    "label": "Module",
+                    "type": "string",
+                    "description": "Name of the twilio.provider module instance to use (defaults to \"twilio\")"
+                },
+                {
+                    "key": "call_sid",
+                    "label": "Call SID",
+                    "type": "string",
+                    "description": "SID of the call to update",
+                    "required": true
+                },
+                {
+                    "key": "status",
+                    "label": "Status",
+                    "type": "string",
+                    "description": "New call status (e.g. completed, canceled)"
+                },
+                {
+                    "key": "url",
+                    "label": "TwiML URL",
+                    "type": "string",
+                    "description": "New TwiML URL to redirect the call to"
+                }
+            ],
+            "outputs": [
+                {
+                    "key": "sid",
+                    "type": "string",
+                    "description": "Call SID"
+                },
+                {
+                    "key": "status",
+                    "type": "string",
+                    "description": "Updated call status"
+                },
+                {
+                    "key": "error",
+                    "type": "string",
+                    "description": "Error message if the step failed"
+                }
+            ]
+        },
+        {
+            "type": "step.twilio_update_document",
+            "plugin": "workflow-plugin-twilio",
+            "description": "Update a Sync Document's data.",
+            "configFields": [
+                {
+                    "key": "module",
+                    "label": "Module",
+                    "type": "string",
+                    "description": "Name of the twilio.provider module instance to use (defaults to \"twilio\")"
+                },
+                {
+                    "key": "service_sid",
+                    "label": "Service SID",
+                    "type": "string",
+                    "description": "Sync service SID",
+                    "required": true
+                },
+                {
+                    "key": "document_sid",
+                    "label": "Document SID",
+                    "type": "string",
+                    "description": "Document SID or unique name",
+                    "required": true
+                }
+            ],
+            "outputs": [
+                {
+                    "key": "sid",
+                    "type": "string",
+                    "description": "Document SID"
+                },
+                {
+                    "key": "error",
+                    "type": "string",
+                    "description": "Error message if the step failed"
+                }
+            ]
+        },
+        {
+            "type": "step.twilio_update_number",
+            "plugin": "workflow-plugin-twilio",
+            "description": "Update an incoming phone number's configuration.",
+            "configFields": [
+                {
+                    "key": "module",
+                    "label": "Module",
+                    "type": "string",
+                    "description": "Name of the twilio.provider module instance to use (defaults to \"twilio\")"
+                },
+                {
+                    "key": "sid",
+                    "label": "SID",
+                    "type": "string",
+                    "description": "Phone number SID",
+                    "required": true
+                },
+                {
+                    "key": "friendly_name",
+                    "label": "Friendly Name",
+                    "type": "string",
+                    "description": "New label"
+                },
+                {
+                    "key": "sms_url",
+                    "label": "SMS URL",
+                    "type": "string",
+                    "description": "Webhook URL for incoming SMS"
+                },
+                {
+                    "key": "voice_url",
+                    "label": "Voice URL",
+                    "type": "string",
+                    "description": "Webhook URL for incoming calls"
+                }
+            ],
+            "outputs": [
+                {
+                    "key": "sid",
+                    "type": "string",
+                    "description": "Phone number SID"
+                },
+                {
+                    "key": "friendly_name",
+                    "type": "string",
+                    "description": "Updated label"
+                },
+                {
+                    "key": "error",
+                    "type": "string",
+                    "description": "Error message if the step failed"
+                }
+            ]
+        },
+        {
+            "type": "step.twilio_update_sim",
+            "plugin": "workflow-plugin-twilio",
+            "description": "Update a Wireless SIM.",
+            "configFields": [
+                {
+                    "key": "module",
+                    "label": "Module",
+                    "type": "string",
+                    "description": "Name of the twilio.provider module instance to use (defaults to \"twilio\")"
+                },
+                {
+                    "key": "sim_sid",
+                    "label": "SIM SID",
+                    "type": "string",
+                    "description": "SIM SID to update",
+                    "required": true
+                },
+                {
+                    "key": "status",
+                    "label": "Status",
+                    "type": "string",
+                    "description": "New SIM status"
+                },
+                {
+                    "key": "unique_name",
+                    "label": "Unique Name",
+                    "type": "string",
+                    "description": "New SIM unique name"
+                }
+            ],
+            "outputs": [
+                {
+                    "key": "sid",
+                    "type": "string",
+                    "description": "SIM SID"
+                },
+                {
+                    "key": "status",
+                    "type": "string",
+                    "description": "Updated SIM status"
+                },
+                {
+                    "key": "error",
+                    "type": "string",
+                    "description": "Error message if the step failed"
+                }
+            ]
+        },
+        {
+            "type": "step.twilio_update_task",
+            "plugin": "workflow-plugin-twilio",
+            "description": "Update a TaskRouter Task (e.g. reassign or complete).",
+            "configFields": [
+                {
+                    "key": "module",
+                    "label": "Module",
+                    "type": "string",
+                    "description": "Name of the twilio.provider module instance to use (defaults to \"twilio\")"
+                },
+                {
+                    "key": "workspace_sid",
+                    "label": "Workspace SID",
+                    "type": "string",
+                    "description": "Target workspace SID",
+                    "required": true
+                },
+                {
+                    "key": "task_sid",
+                    "label": "Task SID",
+                    "type": "string",
+                    "description": "Task SID to update",
+                    "required": true
+                },
+                {
+                    "key": "assignment_status",
+                    "label": "Assignment Status",
+                    "type": "string",
+                    "description": "New assignment status (e.g. completed, canceled)"
+                }
+            ],
+            "outputs": [
+                {
+                    "key": "sid",
+                    "type": "string",
+                    "description": "Task SID"
+                },
+                {
+                    "key": "assignment_status",
+                    "type": "string",
+                    "description": "Updated assignment status"
+                },
+                {
+                    "key": "error",
+                    "type": "string",
+                    "description": "Error message if the step failed"
+                }
+            ]
+        }
+    ]
 }

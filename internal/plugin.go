@@ -5,7 +5,12 @@ import (
 	"fmt"
 
 	sdk "github.com/GoCodeAlone/workflow/plugin/external/sdk"
+	"github.com/GoCodeAlone/workflow/schema"
 )
+
+// Compile-time assertion: twilioPlugin must satisfy sdk.SchemaProvider so that
+// the gRPC server's GetModuleSchemas RPC exposes module contract descriptors.
+var _ sdk.SchemaProvider = (*twilioPlugin)(nil)
 
 // Version is set at build time via -ldflags
 // "-X github.com/GoCodeAlone/workflow-plugin-twilio/internal.Version=X.Y.Z".
@@ -58,4 +63,18 @@ func (p *twilioPlugin) StepTypes() []string {
 // CreateStep creates a step instance of the given type.
 func (p *twilioPlugin) CreateStep(typeName, name string, config map[string]any) (sdk.StepInstance, error) {
 	return createStep(typeName, name, config)
+}
+
+// ModuleSchemas implements sdk.SchemaProvider and returns strict module contract
+// descriptors for all module types advertised by this plugin. The engine uses
+// these descriptors to expose UI schemas and validate configurations at startup.
+func (p *twilioPlugin) ModuleSchemas() []sdk.ModuleSchemaData {
+	return twilioModuleSchemas()
+}
+
+// StepSchemas returns the strict step contract descriptors for every step type
+// advertised by this plugin. These are used by wfctl and the engine to validate
+// step configurations and document step inputs/outputs.
+func (p *twilioPlugin) StepSchemas() []*schema.StepSchema {
+	return allStepSchemas()
 }
