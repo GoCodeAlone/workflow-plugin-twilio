@@ -5,9 +5,12 @@ import (
 	"github.com/GoCodeAlone/workflow/schema"
 )
 
-// AllStepSchemas is the exported accessor used by tooling (e.g. code generators)
-// to enumerate the full set of strict step contract descriptors. At runtime the
-// gRPC server uses the unexported allStepSchemas() via twilioPlugin.StepSchemas().
+// AllStepSchemas is the exported accessor used by tooling (e.g. tools/gen-schemas)
+// to enumerate the full set of strict step contract descriptors. It wraps the
+// unexported allStepSchemas() function which is used internally by twilioPlugin
+// at runtime. At runtime the engine reads step schemas from plugin.json's
+// stepSchemas field (populated via tools/gen-schemas) rather than calling this
+// function directly.
 func AllStepSchemas() []*schema.StepSchema {
 	return allStepSchemas()
 }

@@ -8,8 +8,11 @@ import (
 	"github.com/GoCodeAlone/workflow/schema"
 )
 
-// Compile-time assertion: twilioPlugin must satisfy sdk.SchemaProvider so that
-// the gRPC server's GetModuleSchemas RPC exposes module contract descriptors.
+// Compile-time assertion: twilioPlugin must implement sdk.SchemaProvider so
+// that the engine's gRPC server dispatches GetModuleSchemas calls to our
+// ModuleSchemas() method and includes the twilio.provider contract descriptor
+// in the module schema registry. This does not guarantee the RPC is invoked;
+// it only confirms the interface is satisfied at compile time.
 var _ sdk.SchemaProvider = (*twilioPlugin)(nil)
 
 // Version is set at build time via -ldflags

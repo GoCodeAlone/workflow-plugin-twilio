@@ -1,5 +1,15 @@
-// gen-schemas generates the stepSchemas JSON block for plugin.json.
-// Usage: go run ./tools/gen-schemas > /tmp/step_schemas.json
+// gen-schemas regenerates the stepSchemas JSON block for plugin.json.
+//
+// Usage:
+//
+//	go run ./tools/gen-schemas > /tmp/step_schemas.json
+//
+// To update plugin.json, replace the "stepSchemas" value with the output of
+// this tool. The expected workflow is:
+//
+//  1. Edit allStepSchemas() in internal/schemas.go
+//  2. Run: go run ./tools/gen-schemas > /tmp/step_schemas.json
+//  3. Update the "stepSchemas" key in plugin.json with the generated JSON array
 package main
 
 import (
