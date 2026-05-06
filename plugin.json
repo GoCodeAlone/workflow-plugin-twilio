@@ -1176,12 +1176,6 @@
                     "type": "string",
                     "description": "Queue name",
                     "required": true
-                },
-                {
-                    "key": "max_size",
-                    "label": "Max Size",
-                    "type": "number",
-                    "description": "Maximum number of calls allowed in the queue"
                 }
             ],
             "outputs": [
@@ -1194,6 +1188,11 @@
                     "key": "friendly_name",
                     "type": "string",
                     "description": "Queue name"
+                },
+                {
+                    "key": "current_size",
+                    "type": "number",
+                    "description": "Current number of calls in the queue"
                 },
                 {
                     "key": "error",
@@ -1241,6 +1240,11 @@
                     "key": "status",
                     "type": "string",
                     "description": "Room status"
+                },
+                {
+                    "key": "type",
+                    "type": "string",
+                    "description": "Room type"
                 },
                 {
                     "key": "error",
@@ -1495,9 +1499,14 @@
                     "description": "Task SID"
                 },
                 {
-                    "key": "status",
+                    "key": "assignment_status",
                     "type": "string",
-                    "description": "Task status"
+                    "description": "Task assignment status"
+                },
+                {
+                    "key": "task_queue_sid",
+                    "type": "string",
+                    "description": "Task queue SID the task was routed to"
                 },
                 {
                     "key": "error",
@@ -2286,6 +2295,11 @@
                     "description": "Recording status"
                 },
                 {
+                    "key": "call_sid",
+                    "type": "string",
+                    "description": "Call SID associated with the recording"
+                },
+                {
                     "key": "error",
                     "type": "string",
                     "description": "Error message if the step failed"
@@ -2326,6 +2340,16 @@
                     "key": "status",
                     "type": "string",
                     "description": "Room status"
+                },
+                {
+                    "key": "type",
+                    "type": "string",
+                    "description": "Room type"
+                },
+                {
+                    "key": "duration",
+                    "type": "number",
+                    "description": "Room duration in seconds"
                 },
                 {
                     "key": "error",
@@ -4000,6 +4024,12 @@
                     "label": "Assignment Status",
                     "type": "string",
                     "description": "New assignment status (e.g. completed, canceled)"
+                },
+                {
+                    "key": "reason",
+                    "label": "Reason",
+                    "type": "string",
+                    "description": "Reason for the status update"
                 }
             ],
             "outputs": [
