@@ -1,0 +1,475 @@
+{
+  "version": "1",
+  "contracts": [
+    {
+      "kind": "module",
+      "type": "twilio.provider",
+      "mode": "strict"
+    },
+    {
+      "kind": "step",
+      "type": "step.twilio_send_sms",
+      "mode": "strict"
+    },
+    {
+      "kind": "step",
+      "type": "step.twilio_send_mms",
+      "mode": "strict"
+    },
+    {
+      "kind": "step",
+      "type": "step.twilio_send_whatsapp",
+      "mode": "strict"
+    },
+    {
+      "kind": "step",
+      "type": "step.twilio_list_messages",
+      "mode": "strict"
+    },
+    {
+      "kind": "step",
+      "type": "step.twilio_fetch_message",
+      "mode": "strict"
+    },
+    {
+      "kind": "step",
+      "type": "step.twilio_delete_message",
+      "mode": "strict"
+    },
+    {
+      "kind": "step",
+      "type": "step.twilio_fetch_media",
+      "mode": "strict"
+    },
+    {
+      "kind": "step",
+      "type": "step.twilio_create_messaging_service",
+      "mode": "strict"
+    },
+    {
+      "kind": "step",
+      "type": "step.twilio_create_call",
+      "mode": "strict"
+    },
+    {
+      "kind": "step",
+      "type": "step.twilio_fetch_call",
+      "mode": "strict"
+    },
+    {
+      "kind": "step",
+      "type": "step.twilio_list_calls",
+      "mode": "strict"
+    },
+    {
+      "kind": "step",
+      "type": "step.twilio_update_call",
+      "mode": "strict"
+    },
+    {
+      "kind": "step",
+      "type": "step.twilio_create_conference",
+      "mode": "strict"
+    },
+    {
+      "kind": "step",
+      "type": "step.twilio_list_conferences",
+      "mode": "strict"
+    },
+    {
+      "kind": "step",
+      "type": "step.twilio_add_participant",
+      "mode": "strict"
+    },
+    {
+      "kind": "step",
+      "type": "step.twilio_create_queue",
+      "mode": "strict"
+    },
+    {
+      "kind": "step",
+      "type": "step.twilio_fetch_recording",
+      "mode": "strict"
+    },
+    {
+      "kind": "step",
+      "type": "step.twilio_list_recordings",
+      "mode": "strict"
+    },
+    {
+      "kind": "step",
+      "type": "step.twilio_delete_recording",
+      "mode": "strict"
+    },
+    {
+      "kind": "step",
+      "type": "step.twilio_send_verification",
+      "mode": "strict"
+    },
+    {
+      "kind": "step",
+      "type": "step.twilio_check_verification",
+      "mode": "strict"
+    },
+    {
+      "kind": "step",
+      "type": "step.twilio_create_verify_service",
+      "mode": "strict"
+    },
+    {
+      "kind": "step",
+      "type": "step.twilio_list_verify_services",
+      "mode": "strict"
+    },
+    {
+      "kind": "step",
+      "type": "step.twilio_lookup_phone",
+      "mode": "strict"
+    },
+    {
+      "kind": "step",
+      "type": "step.twilio_create_conversation",
+      "mode": "strict"
+    },
+    {
+      "kind": "step",
+      "type": "step.twilio_send_conversation_message",
+      "mode": "strict"
+    },
+    {
+      "kind": "step",
+      "type": "step.twilio_add_conversation_participant",
+      "mode": "strict"
+    },
+    {
+      "kind": "step",
+      "type": "step.twilio_list_conversations",
+      "mode": "strict"
+    },
+    {
+      "kind": "step",
+      "type": "step.twilio_fetch_conversation",
+      "mode": "strict"
+    },
+    {
+      "kind": "step",
+      "type": "step.twilio_list_conversation_messages",
+      "mode": "strict"
+    },
+    {
+      "kind": "step",
+      "type": "step.twilio_create_conversation_user",
+      "mode": "strict"
+    },
+    {
+      "kind": "step",
+      "type": "step.twilio_create_room",
+      "mode": "strict"
+    },
+    {
+      "kind": "step",
+      "type": "step.twilio_list_rooms",
+      "mode": "strict"
+    },
+    {
+      "kind": "step",
+      "type": "step.twilio_fetch_room",
+      "mode": "strict"
+    },
+    {
+      "kind": "step",
+      "type": "step.twilio_complete_room",
+      "mode": "strict"
+    },
+    {
+      "kind": "step",
+      "type": "step.twilio_list_room_recordings",
+      "mode": "strict"
+    },
+    {
+      "kind": "step",
+      "type": "step.twilio_create_composition",
+      "mode": "strict"
+    },
+    {
+      "kind": "step",
+      "type": "step.twilio_send_notification",
+      "mode": "strict"
+    },
+    {
+      "kind": "step",
+      "type": "step.twilio_create_binding",
+      "mode": "strict"
+    },
+    {
+      "kind": "step",
+      "type": "step.twilio_list_bindings",
+      "mode": "strict"
+    },
+    {
+      "kind": "step",
+      "type": "step.twilio_create_notify_service",
+      "mode": "strict"
+    },
+    {
+      "kind": "step",
+      "type": "step.twilio_create_workspace",
+      "mode": "strict"
+    },
+    {
+      "kind": "step",
+      "type": "step.twilio_create_task",
+      "mode": "strict"
+    },
+    {
+      "kind": "step",
+      "type": "step.twilio_create_worker",
+      "mode": "strict"
+    },
+    {
+      "kind": "step",
+      "type": "step.twilio_create_task_queue",
+      "mode": "strict"
+    },
+    {
+      "kind": "step",
+      "type": "step.twilio_create_tr_workflow",
+      "mode": "strict"
+    },
+    {
+      "kind": "step",
+      "type": "step.twilio_list_tasks",
+      "mode": "strict"
+    },
+    {
+      "kind": "step",
+      "type": "step.twilio_update_task",
+      "mode": "strict"
+    },
+    {
+      "kind": "step",
+      "type": "step.twilio_search_available",
+      "mode": "strict"
+    },
+    {
+      "kind": "step",
+      "type": "step.twilio_buy_number",
+      "mode": "strict"
+    },
+    {
+      "kind": "step",
+      "type": "step.twilio_list_numbers",
+      "mode": "strict"
+    },
+    {
+      "kind": "step",
+      "type": "step.twilio_update_number",
+      "mode": "strict"
+    },
+    {
+      "kind": "step",
+      "type": "step.twilio_release_number",
+      "mode": "strict"
+    },
+    {
+      "kind": "step",
+      "type": "step.twilio_trigger_flow",
+      "mode": "strict"
+    },
+    {
+      "kind": "step",
+      "type": "step.twilio_list_flows",
+      "mode": "strict"
+    },
+    {
+      "kind": "step",
+      "type": "step.twilio_fetch_execution",
+      "mode": "strict"
+    },
+    {
+      "kind": "step",
+      "type": "step.twilio_create_serverless_service",
+      "mode": "strict"
+    },
+    {
+      "kind": "step",
+      "type": "step.twilio_create_function",
+      "mode": "strict"
+    },
+    {
+      "kind": "step",
+      "type": "step.twilio_create_build",
+      "mode": "strict"
+    },
+    {
+      "kind": "step",
+      "type": "step.twilio_list_serverless_services",
+      "mode": "strict"
+    },
+    {
+      "kind": "step",
+      "type": "step.twilio_create_transcript",
+      "mode": "strict"
+    },
+    {
+      "kind": "step",
+      "type": "step.twilio_fetch_transcript",
+      "mode": "strict"
+    },
+    {
+      "kind": "step",
+      "type": "step.twilio_list_transcripts",
+      "mode": "strict"
+    },
+    {
+      "kind": "step",
+      "type": "step.twilio_create_flex_flow",
+      "mode": "strict"
+    },
+    {
+      "kind": "step",
+      "type": "step.twilio_create_web_channel",
+      "mode": "strict"
+    },
+    {
+      "kind": "step",
+      "type": "step.twilio_list_flex_flows",
+      "mode": "strict"
+    },
+    {
+      "kind": "step",
+      "type": "step.twilio_create_proxy_service",
+      "mode": "strict"
+    },
+    {
+      "kind": "step",
+      "type": "step.twilio_create_session",
+      "mode": "strict"
+    },
+    {
+      "kind": "step",
+      "type": "step.twilio_add_proxy_participant",
+      "mode": "strict"
+    },
+    {
+      "kind": "step",
+      "type": "step.twilio_create_sync_service",
+      "mode": "strict"
+    },
+    {
+      "kind": "step",
+      "type": "step.twilio_create_document",
+      "mode": "strict"
+    },
+    {
+      "kind": "step",
+      "type": "step.twilio_update_document",
+      "mode": "strict"
+    },
+    {
+      "kind": "step",
+      "type": "step.twilio_create_sync_map",
+      "mode": "strict"
+    },
+    {
+      "kind": "step",
+      "type": "step.twilio_create_sync_list",
+      "mode": "strict"
+    },
+    {
+      "kind": "step",
+      "type": "step.twilio_list_sims",
+      "mode": "strict"
+    },
+    {
+      "kind": "step",
+      "type": "step.twilio_fetch_sim",
+      "mode": "strict"
+    },
+    {
+      "kind": "step",
+      "type": "step.twilio_update_sim",
+      "mode": "strict"
+    },
+    {
+      "kind": "step",
+      "type": "step.twilio_create_fleet",
+      "mode": "strict"
+    },
+    {
+      "kind": "step",
+      "type": "step.twilio_send_command",
+      "mode": "strict"
+    },
+    {
+      "kind": "step",
+      "type": "step.twilio_fetch_pricing",
+      "mode": "strict"
+    },
+    {
+      "kind": "step",
+      "type": "step.twilio_list_usage_records",
+      "mode": "strict"
+    },
+    {
+      "kind": "step",
+      "type": "step.twilio_list_accounts",
+      "mode": "strict"
+    },
+    {
+      "kind": "step",
+      "type": "step.twilio_create_api_key",
+      "mode": "strict"
+    },
+    {
+      "kind": "step",
+      "type": "step.twilio_list_api_keys",
+      "mode": "strict"
+    },
+    {
+      "kind": "step",
+      "type": "step.twilio_create_content_template",
+      "mode": "strict"
+    },
+    {
+      "kind": "step",
+      "type": "step.twilio_list_content_templates",
+      "mode": "strict"
+    },
+    {
+      "kind": "step",
+      "type": "step.twilio_fetch_content_template",
+      "mode": "strict"
+    },
+    {
+      "kind": "step",
+      "type": "step.twilio_create_trust_product",
+      "mode": "strict"
+    },
+    {
+      "kind": "step",
+      "type": "step.twilio_list_trust_products",
+      "mode": "strict"
+    },
+    {
+      "kind": "step",
+      "type": "step.twilio_fetch_trust_product",
+      "mode": "strict"
+    },
+    {
+      "kind": "step",
+      "type": "step.twilio_create_assistant",
+      "mode": "strict"
+    },
+    {
+      "kind": "step",
+      "type": "step.twilio_list_assistants",
+      "mode": "strict"
+    },
+    {
+      "kind": "step",
+      "type": "step.twilio_create_knowledge_base",
+      "mode": "strict"
+    }
+  ]
+}
