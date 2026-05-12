@@ -7,7 +7,7 @@
     "type": "external",
     "tier": "community",
     "private": false,
-    "minEngineVersion": "0.3.30",
+    "minEngineVersion": "0.51.2",
     "keywords": [
         "twilio",
         "sms",
