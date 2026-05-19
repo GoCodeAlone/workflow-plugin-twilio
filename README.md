@@ -28,7 +28,7 @@ See [`examples/minimal/config.yaml`](examples/minimal/config.yaml) for a minimal
 
 ## Requirements
 
-- workflow engine ≥ `0.51.2`
+- workflow engine ≥ `0.51.6`
 - `TWILIO_ACCOUNT_SID` and `TWILIO_AUTH_TOKEN` environment variables
 
 ## Contributing
