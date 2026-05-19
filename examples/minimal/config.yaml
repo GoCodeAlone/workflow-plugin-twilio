@@ -1,0 +1,32 @@
+# Minimal workflow-plugin-twilio example.
+# Sends an SMS message via Twilio.
+#
+# Prerequisites:
+#   export TWILIO_ACCOUNT_SID=<your-twilio-account-sid>
+#   export TWILIO_AUTH_TOKEN=<your-twilio-auth-token>
+#
+# Usage:
+#   wfctl validate --skip-unknown-types examples/minimal/config.yaml
+
+modules:
+  - name: twilio-provider
+    type: twilio.provider
+    config:
+      accountSid: ${TWILIO_ACCOUNT_SID}
+      authToken: ${TWILIO_AUTH_TOKEN}
+
+workflows:
+  send-sms:
+    trigger:
+      type: http
+      config:
+        path: /sms/send
+        method: POST
+    steps:
+      - name: send
+        type: step.twilio_send_sms
+        config:
+          module: twilio-provider
+          from: "+15005550006"
+          to: "+15005550001"
+          body: "Hello from workflow-plugin-twilio!"
