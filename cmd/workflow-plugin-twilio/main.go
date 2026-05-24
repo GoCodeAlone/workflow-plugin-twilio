@@ -8,5 +8,5 @@ import (
 var version = "dev"
 
 func main() {
-	sdk.Serve(internal.NewTwilioPlugin())
+	sdk.Serve(internal.NewTwilioPlugin(), sdk.WithBuildVersion(sdk.ResolveBuildVersion(internal.Version)))
 }
