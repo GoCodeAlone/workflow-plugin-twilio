@@ -3,7 +3,7 @@ module github.com/GoCodeAlone/workflow-plugin-twilio
 go 1.26.0
 
 require (
-	github.com/GoCodeAlone/workflow v0.62.0
+	github.com/GoCodeAlone/workflow v0.64.0
 	github.com/twilio/twilio-go v1.30.3
 )
 
