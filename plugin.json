@@ -1,6 +1,6 @@
 {
     "name": "workflow-plugin-twilio",
-    "version": "0.2.0",
+    "version": "0.2.2",
     "description": "Twilio communications platform plugin (~90 step types across all Twilio APIs)",
     "author": "GoCodeAlone",
     "license": "MIT",
@@ -4072,5 +4072,13 @@
             "arch": "arm64",
             "url": "https://github.com/GoCodeAlone/workflow-plugin-twilio/releases/download/v0.1.4/workflow-plugin-twilio-darwin-arm64.tar.gz"
         }
-    ]
+    ],
+    "capabilities": {
+        "configProvider": false,
+        "moduleTypes": [
+            "twilio.provider"
+        ],
+        "stepTypes": [],
+        "triggerTypes": []
+    }
 }
