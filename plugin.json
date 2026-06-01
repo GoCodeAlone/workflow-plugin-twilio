@@ -1,6 +1,6 @@
 {
     "name": "workflow-plugin-twilio",
-    "version": "0.2.2",
+    "version": "0.0.0",
     "description": "Twilio communications platform plugin (~90 step types across all Twilio APIs)",
     "author": "GoCodeAlone",
     "license": "MIT",
